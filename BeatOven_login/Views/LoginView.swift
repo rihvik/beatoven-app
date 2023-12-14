@@ -22,7 +22,7 @@ struct LoginView: View {
                     Image("loginpage-img")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.55)
                         .ignoresSafeArea()
 
                     ZStack {
