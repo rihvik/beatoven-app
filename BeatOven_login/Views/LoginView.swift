@@ -79,7 +79,7 @@ struct LoginView: View {
                                                         .tracking(1.75)
                                                         .lineSpacing(18)
                                                         .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
-                                                        .padding(.top, 85) // Add padding to separate from the button
+                                                        .padding(.top, 100) // Add padding to separate from the button
                     }
                 }
             }
