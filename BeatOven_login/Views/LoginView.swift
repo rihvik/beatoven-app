@@ -11,20 +11,69 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("logincolor")
-                    .ignoresSafeArea(.all)
-
-                VStack {
+                VStack(spacing: 0) {
                     Image("loginpage-img")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.5)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65)
                         .ignoresSafeArea()
 
-                    Spacer() // Add a spacer to push the button upward
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 393, height: 475)
+                            .background(Color(red: 0.99, green: 0.87, blue: 0.82))
+                            .cornerRadius(30)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 30)
+                                    .inset(by: 1.50)
+                                    .stroke(Color(red: 0.37, green: 0.16, blue: 0.12), lineWidth: 1.50)
+                            )
+                            .offset(y: -30) // Adjust the offset as needed
 
-                    PrimaryButton(title: "Get Started")
-                        .padding(.bottom, 20) // Adjust the padding as needed
+                        VStack(spacing: 20) {
+                            Rectangle()
+                                  .foregroundColor(.clear)
+                                  .frame(width: 338, height: 64)
+                                  .background(Color(red: 1, green: 0.79, blue: 0.70))
+                                  .cornerRadius(8);
+
+                            Rectangle()
+                                  .foregroundColor(.clear)
+                                  .frame(width: 338, height: 64)
+                                  .background(Color(red: 1, green: 0.79, blue: 0.70))
+                                  .cornerRadius(8);
+                        }
+                        .offset(y: -150) // Adjust the offset to align with the bigger rectangle
+                        
+                
+                       Text("Forgot your password?")
+                                                    .font(Font.custom("Catamaran", size: 13))
+                                                    .tracking(0.26)
+                                                    .lineSpacing(19.50)
+                                                    .foregroundColor(Color(red: 0.16, green: 0.06, blue: 0.45))
+                                                    .frame(maxWidth: .infinity, alignment: .trailing) // Align to the right
+                                                    .padding(.top, -55)
+                                                    .padding(.trailing,16)
+                        
+                        Button(action: {
+                                                    // Action for Sign Up button
+                                                }) {
+                                                    Text("Sign Up")
+                                                            .foregroundColor(.white)
+                                                            .padding()
+                                                            .background(Color("buttoncolor")) // Set your desired button color
+                                                            .cornerRadius(8)
+                                                    }
+                                                .padding(.top, 2) // Add additional top padding for spacing
+
+                                                    Text("OR SIGN IN WITH")
+                                                        .font(Font.custom("Catamaran", size: 12))
+                                                        .tracking(1.75)
+                                                        .lineSpacing(18)
+                                                        .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
+                                                        .padding(.top, 85) // Add padding to separate from the button
+                    }
                 }
             }
         }
