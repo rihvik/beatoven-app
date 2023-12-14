@@ -16,3 +16,17 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+struct PrimaryButton : View{
+    var title : String
+    var body: some View{
+        Text(title)
+            .font(.title3)
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            .foregroundColor(.white)
+            .frame(maxWidth:.infinity)
+            .padding()
+            .background(Color("buttoncolor"))
+            .cornerRadius(50)
+    }
+}
