@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98428AC42B2B298A00BF1149 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428AC32B2B298A00BF1149 /* LoginView.swift */; };
+		98428AC62B2B29B000BF1149 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428AC52B2B29B000BF1149 /* SignupView.swift */; };
 		98FA9DC82B2A068D00719610 /* BeatOven_loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA9DC72B2A068D00719610 /* BeatOven_loginApp.swift */; };
 		98FA9DCA2B2A068D00719610 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA9DC92B2A068D00719610 /* ContentView.swift */; };
 		98FA9DCC2B2A068F00719610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FA9DCB2B2A068F00719610 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98428AC32B2B298A00BF1149 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		98428AC52B2B29B000BF1149 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		98FA9DC42B2A068D00719610 /* BeatOven_login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatOven_login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FA9DC72B2A068D00719610 /* BeatOven_loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatOven_loginApp.swift; sourceTree = "<group>"; };
 		98FA9DC92B2A068D00719610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98428AC22B2B295E00BF1149 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98428AC32B2B298A00BF1149 /* LoginView.swift */,
+				98428AC52B2B29B000BF1149 /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		98FA9DBB2B2A068D00719610 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				98FA9DC72B2A068D00719610 /* BeatOven_loginApp.swift */,
+				98428AC22B2B295E00BF1149 /* Views */,
 				98FA9DC92B2A068D00719610 /* ContentView.swift */,
 				98FA9DCB2B2A068F00719610 /* Assets.xcassets */,
 				98FA9DCD2B2A068F00719610 /* Preview Content */,
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98428AC62B2B29B000BF1149 /* SignupView.swift in Sources */,
+				98428AC42B2B298A00BF1149 /* LoginView.swift in Sources */,
 				98FA9DCA2B2A068D00719610 /* ContentView.swift in Sources */,
 				98FA9DC82B2A068D00719610 /* BeatOven_loginApp.swift in Sources */,
 			);
