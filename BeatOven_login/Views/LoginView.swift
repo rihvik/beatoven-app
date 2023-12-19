@@ -19,7 +19,6 @@ struct LoginView: View {
     @State private var password: String = ""
 
     var body: some View {
-        
         NavigationView {
             ZStack {
                 VStack(spacing: 0) {
@@ -52,31 +51,32 @@ struct LoginView: View {
 
                         VStack(spacing: 20) {
                             Rectangle()
-                                  .foregroundColor(.clear)
-                                  .frame(width: 338, height: 64)
-                                  .background(Color(red: 1, green: 0.79, blue: 0.70))
-                                  .cornerRadius(8)
-                                  .overlay(
-                                                                      TextField(" Email", text: $email)
-                                                                          .font(Font.custom("Catamaran", size: 18))
-                                                                          .tracking(0.24)
-                                                                          .lineSpacing(18)
-                                                                          .foregroundColor(.black)
-                                                                          .padding(.leading, 5)
-                                                                  )
+                                .foregroundColor(.clear)
+                                .frame(width: 338, height: 64)
+                                .background(Color(red: 1, green: 0.79, blue: 0.70))
+                                .cornerRadius(8)
+                                .overlay(
+                                    TextField(" Email", text: $email)
+                                        .font(Font.custom("Catamaran", size: 18))
+                                        .tracking(0.24)
+                                        .lineSpacing(18)
+                                        .foregroundColor(.black)
+                                        .padding(.leading, 5)
+                                )
+
                             Rectangle()
-                                  .foregroundColor(.clear)
-                                  .frame(width: 338, height: 64)
-                                  .background(Color(red: 1, green: 0.79, blue: 0.70))
-                                  .cornerRadius(8)
-                                  .overlay(
-                                                                      TextField(" Password", text: $password)
-                                                                          .font(Font.custom("Catamaran", size: 18))
-                                                                          .tracking(0.24)
-                                                                          .lineSpacing(18)
-                                                                          .foregroundColor(.black)
-                                                                          .padding(.leading, 5)
-                                                                  )
+                                .foregroundColor(.clear)
+                                .frame(width: 338, height: 64)
+                                .background(Color(red: 1, green: 0.79, blue: 0.70))
+                                .cornerRadius(8)
+                                .overlay(
+                                    SecureField(" Password", text: $password)
+                                        .font(Font.custom("Catamaran", size: 18))
+                                        .tracking(0.24)
+                                        .lineSpacing(18)
+                                        .foregroundColor(.black)
+                                        .padding(.leading, 5)
+                                )
 
                         }
                         .offset(y: -150) // Adjust the offset to align with the bigger rectangle
@@ -88,10 +88,10 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .offset(x: UIScreen.main.bounds.width / 2-330, y: UIScreen.main.bounds.height * 0.55 / 2 - 600) // Adjust the offset as needed
                         Text("Garnish your music with a dash of BeatOven magic")
-                                        .font(Font.custom("Catamaran", size: 18))
-                                        .lineSpacing(2)
-                                        .foregroundColor(.white)
-                                        .offset(x: UIScreen.main.bounds.width / 2-235, y: UIScreen.main.bounds.height * 0.55 / 2 - 550)
+                            .font(Font.custom("Catamaran", size: 18))
+                            .lineSpacing(2)
+                            .foregroundColor(.white)
+                            .offset(x: UIScreen.main.bounds.width / 2-235, y: UIScreen.main.bounds.height * 0.55 / 2 - 550)
 
                         Text("Forgot your password?")
                             .font(Font.custom("Catamaran", size: 13))
@@ -119,13 +119,25 @@ struct LoginView: View {
                             .lineSpacing(18)
                             .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
                             .padding(.top, 100) // Add padding to separate from the button
+
+                        HStack(spacing: 16) {
+                            Image("google-logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+
+                            Image("apple-logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                        }
+                        .padding(.bottom, -10) // Adjust the top padding as needed
                     }
                 }
             }
         }
     }
 }
-
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
