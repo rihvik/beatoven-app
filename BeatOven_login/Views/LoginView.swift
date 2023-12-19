@@ -15,7 +15,11 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email: String = ""
+    @State private var password: String = ""
+
     var body: some View {
+        
         NavigationView {
             ZStack {
                 VStack(spacing: 0) {
@@ -53,28 +57,26 @@ struct LoginView: View {
                                   .background(Color(red: 1, green: 0.79, blue: 0.70))
                                   .cornerRadius(8)
                                   .overlay(
-                                    Text("Email")
-                                .font(Font.custom("Catamaran", size: 18))
-                                .tracking(0.24)
-                                    .lineSpacing(18)
-                                                    .foregroundColor(.black)
-                                                    .padding(.trailing, 250)
-                                    )
-
-
+                                                                      TextField(" Email", text: $email)
+                                                                          .font(Font.custom("Catamaran", size: 18))
+                                                                          .tracking(0.24)
+                                                                          .lineSpacing(18)
+                                                                          .foregroundColor(.black)
+                                                                          .padding(.leading, 5)
+                                                                  )
                             Rectangle()
                                   .foregroundColor(.clear)
                                   .frame(width: 338, height: 64)
                                   .background(Color(red: 1, green: 0.79, blue: 0.70))
                                   .cornerRadius(8)
                                   .overlay(
-                                    Text("Password")
-                                .font(Font.custom("Catamaran", size: 18))
-                                .tracking(0.24)
-                                    .lineSpacing(18)
-                                                    .foregroundColor(.black)
-                                                    .padding(.trailing, 220)
-                                    )
+                                                                      TextField(" Password", text: $password)
+                                                                          .font(Font.custom("Catamaran", size: 18))
+                                                                          .tracking(0.24)
+                                                                          .lineSpacing(18)
+                                                                          .foregroundColor(.black)
+                                                                          .padding(.leading, 5)
+                                                                  )
 
                         }
                         .offset(y: -150) // Adjust the offset to align with the bigger rectangle
