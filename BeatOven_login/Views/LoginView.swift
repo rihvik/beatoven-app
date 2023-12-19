@@ -19,12 +19,20 @@ struct LoginView: View {
         NavigationView {
             ZStack {
                 VStack(spacing: 0) {
+
                     Image("loginpage-img")
                         .resizable()
                         .scaledToFill()
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.55)
                         .ignoresSafeArea()
-
+                        .overlay(
+                            Image("BeatOven")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 110)
+                                        .offset(y: -130)
+                            )
+                    
                     ZStack {
                         Rectangle()
                             .foregroundColor(.clear)
