@@ -52,19 +52,37 @@ struct LoginView: View {
                                   .frame(width: 338, height: 64)
                                   .background(Color(red: 1, green: 0.79, blue: 0.70))
                                   .cornerRadius(8)
+                                  .overlay(
+                                    Text("Email")
+                                .font(Font.custom("Catamaran", size: 18))
+                                .tracking(0.24)
+                                    .lineSpacing(18)
+                                                    .foregroundColor(.black)
+                                                    .padding(.trailing, 250)
+                                    )
+
 
                             Rectangle()
                                   .foregroundColor(.clear)
                                   .frame(width: 338, height: 64)
                                   .background(Color(red: 1, green: 0.79, blue: 0.70))
                                   .cornerRadius(8)
+                                  .overlay(
+                                    Text("Password")
+                                .font(Font.custom("Catamaran", size: 18))
+                                .tracking(0.24)
+                                    .lineSpacing(18)
+                                                    .foregroundColor(.black)
+                                                    .padding(.trailing, 220)
+                                    )
+
                         }
                         .offset(y: -150) // Adjust the offset to align with the bigger rectangle
 
                         Text("Sign in")
                             .font(Font.custom("Catamaran", size: 28).weight(.bold))
                             .tracking(0.56)
-                            .lineSpacing(42)
+                            .lineSpacing(41)
                             .foregroundColor(.white)
                             .offset(x: UIScreen.main.bounds.width / 2-330, y: UIScreen.main.bounds.height * 0.55 / 2 - 600) // Adjust the offset as needed
                         Text("Garnish your music with a dash of BeatOven magic")
