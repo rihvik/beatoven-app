@@ -29,7 +29,7 @@ struct LoginView: View {
                             Image("BeatOven")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 100, height: 110)
+                                        .frame(width: 140, height: 140)
                                         .offset(y: -130)
                             )
                     
