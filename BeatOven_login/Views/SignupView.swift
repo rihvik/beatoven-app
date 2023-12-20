@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SignUpView: View {
     var body: some View {
-        Text("Welcome to SignUpView!")
+        Text("Welcome to SignUp Page!")
             .font(.title)
             .padding()
     }
