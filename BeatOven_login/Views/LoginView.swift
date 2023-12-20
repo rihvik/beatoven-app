@@ -30,11 +30,11 @@ struct LoginView: View {
                         .ignoresSafeArea()
                         .overlay(
                             Image("BeatOven")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 140, height: 140)
-                                        .offset(y: -130)
-                            )
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 140, height: 140)
+                                .offset(y: -130)
+                        )
                     
                     ZStack {
                         Rectangle()
@@ -120,7 +120,10 @@ struct LoginView: View {
                             .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
                             .padding(.top, 100) // Add padding to separate from the button
 
-                        HStack(spacing: 16) {
+                        Spacer()
+                        // Add Spacer to push the HStack to the bottom
+
+                        HStack(spacing: 20) {
                             Image("google-logo")
                                 .resizable()
                                 .scaledToFit()
@@ -131,8 +134,9 @@ struct LoginView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                         }
-                        .padding(.bottom, -10) // Adjust the top padding as needed
+                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2-70) // Adjust the bottom padding as needed
                     }
+                    
                 }
             }
         }
