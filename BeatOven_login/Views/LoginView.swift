@@ -29,7 +29,7 @@ struct LoginView: View {
                                 .frame(width: 140, height: 140)
                                 .offset(y: -130)
                         )
-
+                    
                     ZStack {
                         Rectangle()
                             .foregroundColor(.clear)
@@ -42,7 +42,7 @@ struct LoginView: View {
                                     .stroke(Color(red: 0.37, green: 0.16, blue: 0.12), lineWidth: 1.50)
                             )
                             .offset(y: -30) // Adjust the offset as needed
-
+                        
                         VStack(spacing: 20) {
                             Rectangle()
                                 .foregroundColor(.clear)
@@ -57,7 +57,7 @@ struct LoginView: View {
                                         .foregroundColor(.black)
                                         .padding(.leading, 5)
                                 )
-
+                            
                             Rectangle()
                                 .foregroundColor(.clear)
                                 .frame(width: 338, height: 64)
@@ -70,24 +70,24 @@ struct LoginView: View {
                                         } else {
                                             SecureField(" Password", text: $password)
                                         }
-
+                                        
                                         Button(action: {
                                             isPasswordVisible.toggle()
                                         }) {
                                             Image(systemName: isPasswordVisible ? "eye.slash" : "eye")
-                                                                .foregroundColor(.black)
-                                                                .padding(.trailing, 13)
+                                                .foregroundColor(.black)
+                                                .padding(.trailing, 13)
                                         }
                                     }
-                                    .font(Font.custom("Catamaran", size: 18))
-                                    .tracking(0.24)
-                                    .lineSpacing(18)
-                                    .foregroundColor(.black)
-                                    .padding(.leading, 5)
+                                        .font(Font.custom("Catamaran", size: 18))
+                                        .tracking(0.24)
+                                        .lineSpacing(18)
+                                        .foregroundColor(.black)
+                                        .padding(.leading, 5)
                                 )
                         }
                         .offset(y: -150) // Adjust the offset to align with the bigger rectangle
-
+                        
                         Text("Sign in")
                             .font(Font.custom("Catamaran", size: 28).weight(.bold))
                             .tracking(0.56)
@@ -99,7 +99,7 @@ struct LoginView: View {
                             .lineSpacing(2)
                             .foregroundColor(.white)
                             .offset(x: UIScreen.main.bounds.width / 2-235, y: UIScreen.main.bounds.height * 0.55 / 2 - 550)
-
+                        
                         Text("Forgot your password?")
                             .font(Font.custom("Catamaran", size: 14.5))
                             .tracking(0.26)
@@ -108,7 +108,7 @@ struct LoginView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing) // Align to the right
                             .padding(.top, -55)
                             .padding(.trailing, 16)
-
+                        
                         Button(action: {
                             // Action for Sign Up button
                         }) {
@@ -119,23 +119,23 @@ struct LoginView: View {
                                 .cornerRadius(8)
                         }
                         .padding(.top, 2) // Add additional top padding for spacing
-
+                        
                         Text("OR SIGN IN WITH")
                             .font(Font.custom("Catamaran", size: 12))
                             .tracking(1.75)
                             .lineSpacing(18)
                             .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
                             .padding(.top, 100) // Add padding to separate from the button
-
+                        
                         Spacer()
                         // Add Spacer to push the HStack to the bottom
-
+                        
                         HStack(spacing: 20) {
                             Image("google-logo")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
-
+                            
                             Image("apple-logo")
                                 .resizable()
                                 .scaledToFit()
@@ -143,15 +143,18 @@ struct LoginView: View {
                         }
                         .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 - 70)
                     }
-
+                    
                 }
-                Text("Don’t have an account? Sign up")
-                    .font(Font.custom("Catamaran", size: 16).weight(.bold))
-                    .tracking(0.32)
-                    .lineSpacing(19.50)
-                    .foregroundColor(.black)
-                    .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 490)
+                NavigationLink(destination: SignUpView()) {
+                    Text("Don’t have an account? Sign up")
+                        .font(Font.custom("Catamaran", size: 16).weight(.bold))
+                        .tracking(0.32)
+                        .lineSpacing(19.50)
+                        .foregroundColor(Color(hue: 0.692, saturation: 0.956, brightness: 0.66))
+                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 490)
+                }
             }
+            .navigationBarHidden(true)
         }
     }
 }
