@@ -94,7 +94,7 @@ struct LoginView: View {
                             .offset(x: UIScreen.main.bounds.width / 2-235, y: UIScreen.main.bounds.height * 0.55 / 2 - 550)
 
                         Text("Forgot your password?")
-                            .font(Font.custom("Catamaran", size: 13))
+                            .font(Font.custom("Catamaran", size: 14.5))
                             .tracking(0.26)
                             .lineSpacing(19.50)
                             .foregroundColor(Color(red: 0.16, green: 0.06, blue: 0.45))
@@ -105,7 +105,7 @@ struct LoginView: View {
                         Button(action: {
                             // Action for Sign Up button
                         }) {
-                            Text("Sign Up")
+                            Text("Sign In")
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color("buttoncolor")) // Set your desired button color
@@ -114,7 +114,7 @@ struct LoginView: View {
                         .padding(.top, 2) // Add additional top padding for spacing
 
                         Text("OR SIGN IN WITH")
-                            .font(Font.custom("Catamaran", size: 12))
+                            .font(Font.custom("Catamaran", size: 14))
                             .tracking(1.75)
                             .lineSpacing(18)
                             .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
@@ -134,10 +134,16 @@ struct LoginView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                         }
-                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2-70) // Adjust the bottom padding as needed
+                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2-70)
                     }
                     
                 }
+                Text("Don’t have an account? Sign up")
+                    .font(Font.custom("Catamaran", size: 16).weight(.bold))
+                    .tracking(0.32)
+                    .lineSpacing(19.50)
+                    .foregroundColor(.black)
+                    .padding(.top, UIScreen.main.bounds.height * 0.55 / 2+490)
             }
         }
     }
