@@ -5,24 +5,18 @@
 //  Created by mathangy on 14/12/23.
 //
 
-//
-//  LoginView.swift
-//  BeatOven_login
-//
-//  Created by mathangy on 14/12/23.
-//
 
 import SwiftUI
 
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var isPasswordVisible: Bool = false
 
     var body: some View {
         NavigationView {
             ZStack {
                 VStack(spacing: 0) {
-
                     Image("loginpage-img")
                         .resizable()
                         .scaledToFill()
@@ -35,7 +29,7 @@ struct LoginView: View {
                                 .frame(width: 140, height: 140)
                                 .offset(y: -130)
                         )
-                    
+
                     ZStack {
                         Rectangle()
                             .foregroundColor(.clear)
@@ -70,14 +64,27 @@ struct LoginView: View {
                                 .background(Color(red: 1, green: 0.79, blue: 0.70))
                                 .cornerRadius(8)
                                 .overlay(
-                                    SecureField(" Password", text: $password)
-                                        .font(Font.custom("Catamaran", size: 18))
-                                        .tracking(0.24)
-                                        .lineSpacing(18)
-                                        .foregroundColor(.black)
-                                        .padding(.leading, 5)
-                                )
+                                    HStack {
+                                        if isPasswordVisible {
+                                            TextField(" Password", text: $password)
+                                        } else {
+                                            SecureField(" Password", text: $password)
+                                        }
 
+                                        Button(action: {
+                                            isPasswordVisible.toggle()
+                                        }) {
+                                            Image(systemName: isPasswordVisible ? "eye.slash" : "eye")
+                                                                .foregroundColor(.black)
+                                                                .padding(.trailing, 13)
+                                        }
+                                    }
+                                    .font(Font.custom("Catamaran", size: 18))
+                                    .tracking(0.24)
+                                    .lineSpacing(18)
+                                    .foregroundColor(.black)
+                                    .padding(.leading, 5)
+                                )
                         }
                         .offset(y: -150) // Adjust the offset to align with the bigger rectangle
 
@@ -114,7 +121,7 @@ struct LoginView: View {
                         .padding(.top, 2) // Add additional top padding for spacing
 
                         Text("OR SIGN IN WITH")
-                            .font(Font.custom("Catamaran", size: 14))
+                            .font(Font.custom("Catamaran", size: 12))
                             .tracking(1.75)
                             .lineSpacing(18)
                             .foregroundColor(Color(red: 0.20, green: 0.10, blue: 0.48))
@@ -134,16 +141,16 @@ struct LoginView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                         }
-                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2-70)
+                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 - 70)
                     }
-                    
+
                 }
                 Text("Don’t have an account? Sign up")
                     .font(Font.custom("Catamaran", size: 16).weight(.bold))
                     .tracking(0.32)
                     .lineSpacing(19.50)
                     .foregroundColor(.black)
-                    .padding(.top, UIScreen.main.bounds.height * 0.55 / 2+490)
+                    .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 490)
             }
         }
     }
