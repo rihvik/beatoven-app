@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            VStack{
+            VStack{ 
                 TabView(selection: $selectedTab){
                     ForEach(Tab.allCases, id: \.rawValue){ tab in
                         HStack{
