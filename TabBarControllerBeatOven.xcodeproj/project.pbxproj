@@ -12,6 +12,7 @@
 		0FF13D592B35E6520065373A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF13D582B35E6520065373A /* Assets.xcassets */; };
 		0FF13D5C2B35E6520065373A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF13D5B2B35E6520065373A /* Preview Assets.xcassets */; };
 		0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D622B35E6850065373A /* CustomTabBar.swift */; };
+		0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D802B35F00E0065373A /* ProfilePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0FF13D582B35E6520065373A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FF13D5B2B35E6520065373A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FF13D622B35E6850065373A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0FF13D802B35F00E0065373A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */,
+				0FF13D802B35F00E0065373A /* ProfilePage.swift */,
 				0FF13D562B35E6510065373A /* ContentView.swift */,
 				0FF13D622B35E6850065373A /* CustomTabBar.swift */,
 				0FF13D582B35E6520065373A /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				0FF13D572B35E6510065373A /* ContentView.swift in Sources */,
 				0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */,
+				0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

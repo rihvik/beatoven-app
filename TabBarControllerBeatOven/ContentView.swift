@@ -15,16 +15,24 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            VStack{ 
+            VStack{
                 TabView(selection: $selectedTab){
                     ForEach(Tab.allCases, id: \.rawValue){ tab in
-                        HStack{
-                            Image(systemName: tab.rawValue)
-                            Text("\(tab.rawValue.capitalized)")
-                                .bold()
-                                .animation(nil, value: selectedTab)
-                            
-                        }.tag(tab)
+                        if tab.rawValue == "person"{
+                            HStack{
+                                ProfilePage()
+                            }.tag(tab)
+                        }
+                        else{
+                            HStack{
+                                Image(systemName: tab.rawValue)
+                                Text("\(tab.rawValue.capitalized)")
+                                    .bold()
+                                    .animation(nil, value: selectedTab)
+                                
+                            }.tag(tab)
+                        }
+                       
                         
                     }
                 }
@@ -32,6 +40,7 @@ struct ContentView: View {
             VStack{
                 Spacer()
                 CustomTabBar(selectedTab: $selectedTab)
+                    .frame(width: 393,height: 88)
             }
         }
         
