@@ -10,7 +10,7 @@ struct SignUpView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                Image("spl-signup") // Replace "signup-img" with your image name
+                Image("spl-signup") // Replace "spl-signup" with your image name
                     .resizable()
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65)
@@ -65,8 +65,19 @@ struct SignUpView: View {
                 .padding(.vertical, 20) // Adjust vertical padding if needed
                 .background(Color(red: 0.37, green: 0.16, blue: 0.12))
                 .cornerRadius(30) // Adjust corner radius
+
+                NavigationLink(destination: LoginView()) {
+                    Text("Log in")
+                        .font(
+                            Font.custom("Catamaran", size: 20)
+                                .weight(.bold)
+                        )
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.black)
+                        .padding(.top, 20) // Adjust top padding for text placement
+                }
             }
-            .offset(y: UIScreen.main.bounds.height * 0.2)
+            .offset(y: UIScreen.main.bounds.height * 0.25)
         }
         .navigationBarHidden(true)
     }
@@ -77,4 +88,3 @@ struct SignUpView_Previews: PreviewProvider {
         SignUpView()
     }
 }
-
