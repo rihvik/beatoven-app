@@ -12,7 +12,7 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordVisible: Bool = false
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -145,6 +145,8 @@ struct LoginView: View {
                     }
                     
                 }
+                .navigationBarHidden(true)
+                
                 NavigationLink(destination: SignUpView()) {
                     Text("Don’t have an account? Sign up")
                         .font(Font.custom("Catamaran", size: 16).weight(.bold))
@@ -154,13 +156,12 @@ struct LoginView: View {
                         .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 490)
                 }
             }
-            .navigationBarHidden(true)
         }
     }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+    
+    struct LoginView_Previews: PreviewProvider {
+        static var previews: some View {
+            LoginView()
+        }
     }
 }
