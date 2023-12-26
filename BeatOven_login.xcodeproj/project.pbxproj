@@ -13,6 +13,7 @@
 		98FA9DCA2B2A068D00719610 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA9DC92B2A068D00719610 /* ContentView.swift */; };
 		98FA9DCC2B2A068F00719610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FA9DCB2B2A068F00719610 /* Assets.xcassets */; };
 		98FA9DCF2B2A068F00719610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FA9DCE2B2A068F00719610 /* Preview Assets.xcassets */; };
+		98FAD18E2B3B08AF00154A21 /* FullSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAD18D2B3B08AF00154A21 /* FullSignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		98FA9DC92B2A068D00719610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98FA9DCB2B2A068F00719610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98FA9DCE2B2A068F00719610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98FAD18D2B3B08AF00154A21 /* FullSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			children = (
 				98428AC32B2B298A00BF1149 /* LoginView.swift */,
 				98428AC52B2B29B000BF1149 /* SignupView.swift */,
+				98FAD18D2B3B08AF00154A21 /* FullSignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				98428AC62B2B29B000BF1149 /* SignupView.swift in Sources */,
 				98428AC42B2B298A00BF1149 /* LoginView.swift in Sources */,
+				98FAD18E2B3B08AF00154A21 /* FullSignUpView.swift in Sources */,
 				98FA9DCA2B2A068D00719610 /* ContentView.swift in Sources */,
 				98FA9DC82B2A068D00719610 /* BeatOven_loginApp.swift in Sources */,
 			);
