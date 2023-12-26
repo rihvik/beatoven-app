@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @Environment(\.presentationMode) var presentaionMode : Binding<PresentationMode>
     var body: some View {
         NavigationView { // Wrap SignUpView in NavigationView
             ZStack {
@@ -94,7 +95,7 @@ struct SignUpView: View {
                     .background(Color(red: 0.37, green: 0.16, blue: 0.12))
                     .cornerRadius(30) // Adjust corner radius
 
-                    NavigationLink(destination: LoginView()) {
+                    Button(action: {self.presentaionMode.wrappedValue.dismiss()}) {
                         Text("Log in")
                             .font(
                                 Font.custom("Catamaran", size: 20)
