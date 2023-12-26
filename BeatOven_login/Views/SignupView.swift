@@ -93,15 +93,23 @@ struct SignUpView: View {
                     Button(action: {
                         // Action for the third button
                     }) {
-                        Text("Continue with Facebook")
-                            .font(.headline) // Adjust font size
-                            .foregroundColor(.white)
+                        HStack {
+                            Image("apple-logo-2") // Replace "facebook-logo" with the actual name of your Facebook logo image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 23)
+                                .padding(.trailing, 20)
+                            // Add padding between the Facebook logo and text
+                                
+                            Text("Continue with Apple")
+                        }
+                        .font(.headline) // Adjust font size
+                        .foregroundColor(.white)
                     }
-                    .padding(.horizontal, 80) // Adjust horizontal padding to make the button broader
+                    .padding(.horizontal, 75) // Adjust horizontal padding to make the button broader
                     .padding(.vertical, 20) // Adjust vertical padding if needed
                     .background(Color(red: 0.37, green: 0.16, blue: 0.12))
                     .cornerRadius(30) // Adjust corner radius
-
                     Button(action: {self.presentaionMode.wrappedValue.dismiss()}) {
                         Text("Log in")
                             .font(
