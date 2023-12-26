@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FullSignUpView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var email: String = ""
-    @State private var username: String = "" // Add username state
+    @State private var username: String = "" 
     @State private var password: String = ""
     @State private var isPasswordVisible: Bool = false
 
