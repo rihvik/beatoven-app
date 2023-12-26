@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FullSignUpView: View {
     @State private var email: String = ""
+    @State private var username: String = "" // Add username state
     @State private var password: String = ""
     @State private var isPasswordVisible: Bool = false
 
@@ -40,8 +41,22 @@ struct FullSignUpView: View {
                                 .stroke(Color(red: 0.37, green: 0.16, blue: 0.12), lineWidth: 1.50)
                         )
                         .offset(y: -30) // Adjust the offset as needed
-                    
+
                     VStack(spacing: 20) {
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 338, height: 64)
+                            .background(Color(red: 1, green: 0.79, blue: 0.70))
+                            .cornerRadius(8)
+                            .overlay(
+                                TextField(" Username", text: $username) // Use username here
+                                    .font(Font.custom("Catamaran", size: 18))
+                                    .tracking(0.24)
+                                    .lineSpacing(18)
+                                    .foregroundColor(.black)
+                                    .padding(.leading, 5)
+                            )
+
                         Rectangle()
                             .foregroundColor(.clear)
                             .frame(width: 338, height: 64)
@@ -55,7 +70,7 @@ struct FullSignUpView: View {
                                     .foregroundColor(.black)
                                     .padding(.leading, 5)
                             )
-                        
+
                         Rectangle()
                             .foregroundColor(.clear)
                             .frame(width: 338, height: 64)
@@ -68,7 +83,7 @@ struct FullSignUpView: View {
                                     } else {
                                         SecureField(" Password", text: $password)
                                     }
-                                    
+
                                     Button(action: {
                                         isPasswordVisible.toggle()
                                     }) {
@@ -77,54 +92,49 @@ struct FullSignUpView: View {
                                             .padding(.trailing, 13)
                                     }
                                 }
-                                    .font(Font.custom("Catamaran", size: 18))
-                                    .tracking(0.24)
-                                    .lineSpacing(18)
-                                    .foregroundColor(.black)
-                                    .padding(.leading, 5)
+                                .font(Font.custom("Catamaran", size: 18))
+                                .tracking(0.24)
+                                .lineSpacing(18)
+                                .foregroundColor(.black)
+                                .padding(.leading, 5)
                             )
                     }
-                    .offset(y: -150) // Adjust the offset to align with the bigger rectangle
-                    
-                    Text("Sign in")
+                    .offset(y: -120) // Adjust the offset to align with the bigger rectangle
+
+                    Text("Sign Up")
                         .font(Font.custom("Catamaran", size: 28).weight(.bold))
                         .tracking(0.56)
                         .lineSpacing(41)
                         .foregroundColor(.white)
-                        .offset(x: UIScreen.main.bounds.width / 2-330, y: UIScreen.main.bounds.height * 0.55 / 2 - 600) // Adjust the offset as needed
-                    Text("Garnish your music with a dash of BeatOven magic")
+                        .offset(x: UIScreen.main.bounds.width / 2-330, y: UIScreen.main.bounds.height * 0.55 / 2 - 620) // Adjust the offset as needed
+                    Text("Welcome, Let’s Fuel your musical fire and let your riffs rule the stage.")
                         .font(Font.custom("Catamaran", size: 18))
                         .lineSpacing(2)
                         .foregroundColor(.white)
-                        .offset(x: UIScreen.main.bounds.width / 2-235, y: UIScreen.main.bounds.height * 0.55 / 2 - 550)
-                    
-                   
-                    
+                        .offset(x: UIScreen.main.bounds.width / 2-195, y: UIScreen.main.bounds.height * 0.55 / 2 - 570)
+
                     Button(action: {
                         // Action for Sign Up button
                     }) {
-                        Text("Sign In")
+                        Text("Sign Up")
                             .foregroundColor(.white)
                             .padding()
                             .background(Color("buttoncolor")) // Set your desired button color
                             .cornerRadius(8)
                     }
-                    .padding(.top, 2) // Add additional top padding for spacing
-                    
-                
+                    .padding(.top, 90) // Add additional top padding for spacing
+
                     Spacer()
-                    // Add Spacer to push the HStack to the bottom
-                    
-                   
                 }
-                
             }
             .navigationBarHidden(true)
-            
-           
+        
+        
         }
     }
 }
+
+
 
 struct FullSignUpView_Previews: PreviewProvider {
     static var previews: some View {
