@@ -59,12 +59,13 @@ struct ProfilePage: View {
                             )
                             
                             ZStack {
-                                Rectangle()
-                                    .frame(width: 55.14, height: 55)
-                                    .foregroundColor(.clear)
-                                Image(systemName: "plus")
-                                    .foregroundColor(.black)
-                                    .font(.system(size: 25))
+                                                                    Rectangle()
+                                        .frame(width: 55.14, height: 55)
+                                        .foregroundColor(.clear)
+                                Button(action: {} ){
+                                    Image(systemName: "plus")
+                                        .foregroundColor(.black)
+                                    .font(.system(size: 25))}
                             }
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
