@@ -110,7 +110,7 @@ struct SignUpView: View {
                             )
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
-                            .padding(.top, 20) // Adjust top padding for text placement
+                            .padding(.bottom, 10) // Adjust top padding for text placement
                     }
                 }
                 .offset(y: UIScreen.main.bounds.height * 0.25)
