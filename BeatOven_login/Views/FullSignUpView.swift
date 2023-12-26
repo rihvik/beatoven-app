@@ -116,7 +116,7 @@ struct FullSignUpView: View {
                     Button(action: {
                         // Action for Sign Up button
                     }) {
-                        Text("Sign Up")
+                        Text("Create Account")
                             .foregroundColor(.white)
                             .padding()
                             .background(Color("buttoncolor")) // Set your desired button color
@@ -128,7 +128,14 @@ struct FullSignUpView: View {
                 }
             }
             .navigationBarHidden(true)
-        
+            NavigationLink(destination: LoginView()) {
+                Text("You have account? Sign in")
+                    .font(Font.custom("Catamaran", size: 16).weight(.bold))
+                    .tracking(0.32)
+                    .lineSpacing(19.50)
+                    .foregroundColor(Color(hue: 0.692, saturation: 0.956, brightness: 0.66))
+                    .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 440)
+            }
         
         }
     }
