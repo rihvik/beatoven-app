@@ -146,8 +146,8 @@ struct LoginView: View {
                     
                 }
                 .navigationBarHidden(true)
-                
-                NavigationLink(destination: SignUpView()) {
+                .navigationBarBackButtonHidden(true)
+                NavigationLink(destination: SignUpView().navigationBarBackButtonHidden(true)) {
                     Text("Don’t have an account? Sign up")
                         .font(Font.custom("Catamaran", size: 16).weight(.bold))
                         .tracking(0.32)

@@ -115,7 +115,7 @@ struct FullSignUpView: View {
                             .foregroundColor(.white)
                             .offset(x: UIScreen.main.bounds.width / 2-195, y: UIScreen.main.bounds.height * 0.55 / 2 - 570)
 
-                        NavigationLink(destination: LoginView()) {
+                        NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)) {
                             Text("Create Account")
                                 .foregroundColor(.white)
                                 .padding()

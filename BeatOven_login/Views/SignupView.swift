@@ -60,7 +60,7 @@ struct SignUpView: View {
                     .offset(y: UIScreen.main.bounds.height * 0.41) // Adjust the offset to place the rectangle at the bottom
 
                 VStack(spacing: 23) { // Adjust spacing between buttons
-                    NavigationLink(destination: FullSignUpView()) {
+                    NavigationLink(destination: FullSignUpView().navigationBarBackButtonHidden(true)) {
                         Text("Sign up Free")
                             .font(.headline) // Adjust font size
                             .foregroundColor(.white)
