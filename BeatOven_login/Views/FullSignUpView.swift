@@ -123,11 +123,20 @@ struct FullSignUpView: View {
                                 .cornerRadius(8)
                                 .padding(.top, 90) // Add additional top padding for spacing
                         }
+                        
 
                         Spacer()
                     }
                 }
                 .navigationBarHidden(true)
+                
+                NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)){
+                    Text("Have an account? Log In")
+                        .font(Font.custom("Catamaran", size: 16).weight(.bold))
+                        .tracking(0.32)
+                        .lineSpacing(19.50)
+                        .foregroundColor(Color(hue: 0.692, saturation: 0.956, brightness: 0.66))
+                }.offset(y:325)
             }
         }
     }
