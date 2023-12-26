@@ -14,10 +14,20 @@ struct SignUpView: View {
                     Image("spl-signup") // Replace "spl-signup" with your image name
                         .resizable()
                         .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.75)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.8)
                         .edgesIgnoringSafeArea(.top)
                         .frame(width: 140, height: 140)
-                        .offset(y: -180)// Pin the image to the top
+                    
+                        .offset(y: -180)
+                        .overlay(
+                            Image("BeatOven")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 140, height: 140)
+                                .offset(y: -310)
+                        )
+                    // Pin the image to the top
+                    
 
                     VStack {
                         // SignUpView content
@@ -31,6 +41,14 @@ struct SignUpView: View {
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(.white)
                                             .offset(y: -140) // Adjust the offset to position the text
+                    Text("Join the community and let your music be heard")
+                                            .font(
+                                                Font.custom("Catamaran", size: 24)
+                                                    .weight(.bold)
+                                            )
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(.white)
+                                            .offset(y: -110) // Adjust the offset to position the text
 
                 }
 
