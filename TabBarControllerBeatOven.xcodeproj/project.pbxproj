@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FF1197D2B3EE81600E696DC /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1197C2B3EE81600E696DC /* PortfolioView.swift */; };
 		0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */; };
 		0FF13D572B35E6510065373A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D562B35E6510065373A /* ContentView.swift */; };
 		0FF13D592B35E6520065373A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF13D582B35E6520065373A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FF1197C2B3EE81600E696DC /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		0FF13D512B35E6510065373A /* TabBarControllerBeatOven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarControllerBeatOven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerBeatOvenApp.swift; sourceTree = "<group>"; };
 		0FF13D562B35E6510065373A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */,
 				0FF13D802B35F00E0065373A /* ProfilePage.swift */,
 				0FF13D562B35E6510065373A /* ContentView.swift */,
+				0FF1197C2B3EE81600E696DC /* PortfolioView.swift */,
 				0FF13D622B35E6850065373A /* CustomTabBar.swift */,
 				0FF13D582B35E6520065373A /* Assets.xcassets */,
 				0FF13D5A2B35E6520065373A /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF13D572B35E6510065373A /* ContentView.swift in Sources */,
+				0FF1197D2B3EE81600E696DC /* PortfolioView.swift in Sources */,
 				0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */,
 				0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,

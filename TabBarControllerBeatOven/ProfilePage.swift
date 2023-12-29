@@ -32,22 +32,22 @@ struct ProfilePage: View {
                             
                         }.offset(y:59)
                         Text("Heisenberg")
-                            .font(Font.custom("SF Pro Display", size: 28).weight(.bold))
+                            .font(.system(size: 36, weight: .semibold))
                             .foregroundColor(.black)
                             .offset(y:40)
                         Text("@walter_brown")
-                            .font(Font.custom("SF Pro Display", size: 16))
+                            .font(.system(size: 16))
                             .foregroundColor(.gray)
                             .offset(y:40)
                         Text("Guitarist")
-                            .font(Font.custom("SF Pro Display", size: 16))
+                            .font(.system(size: 16))
                             .foregroundColor(.gray)
                             .offset(y:40)
                         
                         HStack {
                             HStack(alignment: .top, spacing: 10) {
                                 Text("EDIT PROFILE")
-                                    .font(Font.custom("SF Pro Display", size: 16).weight(.bold))
+                                    .font(.system(size: 19))
                                     .foregroundColor(.black)
                             }
                             .frame(width: 249, height: 57)
@@ -87,11 +87,11 @@ struct ProfilePage: View {
                         HStack {
                             VStack {
                                 Text("100")
-                                    .font(Font.custom("SF Pro Display", size: 24).weight(.bold))
+                                    .font(.system(size: 24))
                                     .foregroundColor(.black)
                                 
                                 Text("Post")
-                                    .font(Font.custom("SF Pro Display", size: 12))
+                                    .font(.system(size: 12))
                                     .foregroundColor(.black)
                                 
                                 
@@ -104,11 +104,11 @@ struct ProfilePage: View {
                             
                             VStack {
                                 Text("100")
-                                    .font(Font.custom("SF Pro Display", size: 24).weight(.bold))
+                                    .font(.system(size: 24))
                                     .foregroundColor(.black)
                                 
                                 Text("Followers")
-                                    .font(Font.custom("SF Pro Display", size: 12))
+                                    .font(.system(size: 12))
                                     .foregroundColor(.black)
                                 
                                 
@@ -119,11 +119,11 @@ struct ProfilePage: View {
                                 .background(.black)
                             VStack {
                                 Text("100")
-                                    .font(Font.custom("SF Pro Display", size: 24).weight(.bold))
+                                    .font(.system(size: 24))
                                     .foregroundColor(.black)
                                 
                                 Text("Following")
-                                    .font(Font.custom("SF Pro Display", size: 12))
+                                    .font(.system(size: 12))
                                     .foregroundColor(.black)
                                 
                                 
@@ -136,7 +136,7 @@ struct ProfilePage: View {
                     // Group 2
                     Group {
                         Text("Discography")
-                            .font(Font.custom("SF Pro Display", size: 20).weight(.bold))
+                            .font(.system(size: 20))
                             .foregroundColor(.black)
                             .offset(x:-125)
                             .padding(.top)
@@ -177,7 +177,7 @@ struct ProfilePage: View {
                             HStack(alignment: .top, spacing: 10) {
                                 VStack(spacing: 0) {
                                     Text("All")
-                                        .font(Font.custom("SF Pro Display", size: 13.12))
+                                        .font(.system(size: 13.12))
                                         .lineSpacing(22.21)
                                         .foregroundColor(.black)
                                     Rectangle()
@@ -187,11 +187,11 @@ struct ProfilePage: View {
                                         .cornerRadius(2.02)
                                 }
                                 Text("Photo")
-                                    .font(Font.custom("SF Pro Display", size: 13.12))
+                                    .font(.system(size: 13.12))
                                     .lineSpacing(22.21)
                                     .foregroundColor(.black)
                                 Text("Videos")
-                                    .font(Font.custom("SF Pro Display", size: 13.12))
+                                    .font(.system(size: 13.12))
                                     .lineSpacing(22.21)
                                     .foregroundColor(.black)
                             }
@@ -215,17 +215,17 @@ struct ProfilePage: View {
                                                         .clipShape(Ellipse())
                                         VStack(alignment: .leading, spacing: 0) {
                                             Text("Dave C. Brown")
-                                                .font(Font.custom("SF Pro Display", size: 18).weight(.bold))
+                                                .font(.system(size: 18))
                                                 .foregroundColor(.black)
                                             Text("08:39 am")
-                                                .font(Font.custom("SF Pro Display", size: 14))
+                                                .font(.system(size: 14))
                                                 .tracking(0.70)
                                                 .lineSpacing(21)
                                                 .foregroundColor(.gray)
                                         }
                                     }
                                     Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla natoque id aenean.")
-                                        .font(Font.custom("SF Pro Display", size: 14))
+                                        .font(.system(size: 14))
                                         .lineSpacing(11)
                                         .foregroundColor(.black)
                                 }
