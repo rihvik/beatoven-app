@@ -25,10 +25,7 @@ struct ContentView: View {
                         }
                         else if tab.rawValue == "person.2"{
                             HStack{
-                                Image(systemName: tab.rawValue)
-                                Text("\(tab.rawValue.capitalized)")
-                                    .bold()
-                                    .animation(nil, value: selectedTab)
+                                PortfolioView()
                                 
                             }.tag(tab)
                             

@@ -230,7 +230,7 @@ struct PortfolioView: View {
                         
                         
                     }.offset(y:250)
-                    .padding(.bottom,400)
+                    .padding(.bottom,500)
                     
                     
                 }
