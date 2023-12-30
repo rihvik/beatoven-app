@@ -119,7 +119,7 @@ struct DiscoverView: View {
                                 
                             }.offset(x:-15,y:50)
                             HStack{
-                                                            NavigationLink(destination: ProfilePage2()) {
+                                NavigationLink(destination: ProfilePage2().navigationBarBackButtonHidden(true)) {
                                                                 Image(systemName: "person")
                                                                     .resizable()
                                                                     .frame(width: 28,height: 28)
@@ -213,7 +213,7 @@ struct DiscoverView: View {
                                 
                             }.offset(x:-15,y:50)
                             HStack{
-                                                            NavigationLink(destination: ProfilePage2()) {
+                                                            NavigationLink(destination: ProfilePage2().navigationBarBackButtonHidden(true)) {
                                                                 Image(systemName: "person")
                                                                     .resizable()
                                                                     .frame(width: 28,height: 28)
@@ -307,7 +307,7 @@ struct DiscoverView: View {
                                 
                             }.offset(x:-15,y:50)
                             HStack{
-                                                            NavigationLink(destination: ProfilePage2()) {
+                                                            NavigationLink(destination: ProfilePage2().navigationBarBackButtonHidden(true)) {
                                                                 Image(systemName: "person")
                                                                     .resizable()
                                                                     .frame(width: 28,height: 28)
