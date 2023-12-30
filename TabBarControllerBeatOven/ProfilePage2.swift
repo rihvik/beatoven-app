@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfilePage: View {
+struct ProfilePage2: View {
     var body: some View {
         
         NavigationView {
@@ -19,16 +19,19 @@ struct ProfilePage: View {
                     // Group 1
                     Group{
                         ZStack {
-                            Image("Profile")
+                            Image("Portfo")
                                 .resizable()
                                 .frame(width: 393, height: 290)
                                 .offset(y:-59)
-                            
-                            Ellipse()
-                                .frame(width: 123.68, height: 125.75)
-                                .background(Image("SmallImage").resizable())
-                                .foregroundColor(.clear)
-                                .offset(y:70)
+                            Image("Portfo") // Replace "your_image_name" with the actual name of your image asset
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 123.68, height: 125.75)// Adjust the frame size as needed
+                                            
+                                            .clipShape(Ellipse())
+                                            .overlay(Circle().stroke(Color.blue, lineWidth: 4))
+                                            .offset(y:70)
+                                            
                             
                         }.offset(y:59)
                         Text("Heisenberg")
@@ -46,9 +49,12 @@ struct ProfilePage: View {
                         
                         HStack {
                             HStack(alignment: .top, spacing: 10) {
-                                Text("EDIT PROFILE")
-                                    .font(.system(size: 19))
-                                    .foregroundColor(.black)
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                    Text("Follow")
+                                        .font(.system(size: 19))
+                                        .foregroundColor(.black)
+                                })
+                                
                             }
                             .frame(width: 249, height: 57)
                             .cornerRadius(5)
@@ -62,10 +68,15 @@ struct ProfilePage: View {
                                                                     Rectangle()
                                         .frame(width: 55.14, height: 55)
                                         .foregroundColor(.clear)
-                                Button(action: {} ){
+                                NavigationLink(destination: PortfolioView()) {
                                     Image(systemName: "gearshape")
-                                        .foregroundColor(.black)
-                                    .font(.system(size: 25))}
+                                        .resizable()
+                                        .frame(width: 28,height: 28)
+                                        .foregroundColor(Color(red: 0.13, green: 0.20, blue: 0.25))
+                                
+                                
+                                }
+                               
                             }
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
@@ -208,7 +219,7 @@ struct ProfilePage: View {
                                     )
                                 VStack(alignment: .leading, spacing: 12) {
                                     HStack(alignment: .top, spacing: 16) {
-                                        Image("SmallImage") // Replace "your_image_name" with the actual name of your image asset
+                                        Image("Portfo") // Replace "your_image_name" with the actual name of your image asset
                                                         .resizable()
                                                         .aspectRatio(contentMode: .fill)
                                                         .frame(width: 50, height: 50) // Adjust the frame size as needed
@@ -275,8 +286,8 @@ struct ProfilePage: View {
 }
 
 
-struct ProfilePage_Previews: PreviewProvider {
+struct ProfilePage2_Previews: PreviewProvider {
     static var previews: some View {
-        ProfilePage()
+        ProfilePage2()
     }
 }

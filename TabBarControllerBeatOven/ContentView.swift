@@ -25,7 +25,7 @@ struct ContentView: View {
                         }
                         else if tab.rawValue == "person.2"{
                             HStack{
-                                PortfolioView()
+                                DiscoverView()
                                 
                             }.tag(tab)
                             
@@ -45,10 +45,9 @@ struct ContentView: View {
                 }
             }
             VStack{
-                Spacer()
+                
                 CustomTabBar(selectedTab: $selectedTab)
-                    .frame(width: 393,height: 88)
-            }
+            }.offset(y:370)
         }
         
     }
