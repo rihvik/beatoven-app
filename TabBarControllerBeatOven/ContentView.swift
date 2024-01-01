@@ -27,7 +27,7 @@ struct ContentView: View {
                             HStack{
                                 DiscoverView()
                                 
-                            }.tag(tab.raw)
+                            }.tag(tab)
                             
                         }
                         else{
