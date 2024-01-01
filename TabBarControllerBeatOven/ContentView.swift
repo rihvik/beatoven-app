@@ -18,27 +18,7 @@ struct ContentView: View {
         ZStack {
             VStack {
                 // Add the text on top of the images
-                Text("Hi")
-                    .font(
-                        Font.custom("Catamaran", size: 18)
-                            .weight(.bold)
-                    )
-                    .foregroundColor(.black)
-                    .frame(width: 24.38644, height: 29.64382, alignment: .topLeading)
 
-                // Add the image at the top
-                Rectangle()
-                    .foregroundColor(.clear)
-                    .frame(width: 62.75348, height: 66.36922)
-                    .background(
-                        Image("home-prof1")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 62.753475189208984, height: 66.36921691894531)
-                            .clipped()
-                    )
-                    .cornerRadius(66.36922)
-                    .padding(.bottom, 10) // Add some padding between the image and TabView
 
                 TabView(selection: $selectedTab) {
                     ForEach(Tab.allCases, id: \.rawValue) { tab in
@@ -60,7 +40,11 @@ struct ContentView: View {
                                 // Empty view to hide the default tab bar item
                                 EmptyView()
                             }
-                        } else {
+                        } 
+                        else if tab.rawValue == "house"{
+                            HomeView()
+                        }
+                        else {
                             HStack {
                                 Image(systemName: tab.rawValue)
                                 Text("\(tab.rawValue.capitalized)")
