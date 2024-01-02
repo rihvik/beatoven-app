@@ -86,7 +86,7 @@ struct ProfilePage2: View {
                                         .foregroundColor(Color(red: 0.13, green: 0.20, blue: 0.25))
                                 
                                 
-                                }.offset(x:10)
+                                }
                                
                             }
                             .overlay(
