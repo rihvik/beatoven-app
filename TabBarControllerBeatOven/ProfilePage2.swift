@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfilePage2: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         
         NavigationView {
@@ -16,6 +17,7 @@ struct ProfilePage2: View {
                 
                 ScrollView {
                     
+                    
                     // Group 1
                     Group{
                         ZStack {
@@ -23,6 +25,15 @@ struct ProfilePage2: View {
                                 .resizable()
                                 .frame(width: 393, height: 290)
                                 .offset(y:-59)
+                            Button(action: {
+                                self.presentationMode.wrappedValue.dismiss()
+                            }) {
+                                Image(systemName: "chevron.backward")
+                                    .foregroundColor(.black)
+                                Text("Back")
+                                    .foregroundColor(.black)
+                            }
+                            .offset(x:-160,y:-150)
                             Image("Portfo") // Replace "your_image_name" with the actual name of your image asset
                                             .resizable()
                                             .aspectRatio(contentMode: .fill)
@@ -75,7 +86,7 @@ struct ProfilePage2: View {
                                         .foregroundColor(Color(red: 0.13, green: 0.20, blue: 0.25))
                                 
                                 
-                                }
+                                }.offset(x:10)
                                
                             }
                             .overlay(

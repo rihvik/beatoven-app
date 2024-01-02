@@ -40,9 +40,15 @@ struct ContentView: View {
                                 // Empty view to hide the default tab bar item
                                 EmptyView()
                             }
-                        } 
+                        }
                         else if tab.rawValue == "house"{
                             HomeView()
+                        }
+                        else if tab.rawValue == "plus"{
+                            HStack {
+                                ColabView()
+                            }
+                            .tag(tab)
                         }
                         else {
                             HStack {
@@ -66,7 +72,9 @@ struct ContentView: View {
             }
             .offset(y: 370)
         }
+
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
