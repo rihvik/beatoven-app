@@ -140,6 +140,51 @@ struct HomeView: View {
                     .frame(width: 25, height: 25)
                     .clipShape(Circle())
                     .offset(x: 175, y: -272)
+                ZStack {
+                    Rectangle()
+                        .frame(width: 360, height: 55.33513)
+                        .foregroundColor(Color(red: 1, green: 0.79, blue: 0.7)) // Replace with the intended color
+                        .cornerRadius(100)
+                }
+                .padding(.horizontal, 30)
+                .padding(.vertical, -190)
+                .frame(width: 408, alignment: .topLeading)
+                HStack(alignment: .top, spacing: 10) {
+                                    Rectangle()
+                                        .frame(width: 200, height: 50)
+                                        .foregroundColor(Color("trending-color")) // Change the color to "trending-color"
+                                        .cornerRadius(100)
+                                }
+                                .padding(.horizontal, 15)
+                                .padding(.vertical, -190)
+                                .frame(width: 408, alignment: .topLeading)
+                Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 32, height: 32)
+                        .background(
+                            Image("post-prof")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 34.266, height: 45.000003814697266)
+                                .clipped()
+                        )
+                        .cornerRadius(32)
+                        .offset(x: -120, y: -100) // Adjust the offset to position it as needed
+                Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 298.41013, height: 275.58423)
+                        .background(
+                            Image("post-1") // Replace with the actual path to the image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 298.4101257324219, height: 275.584228515625)
+                                .clipped()
+                        )
+                        .cornerRadius(19.54361)
+                        .offset(x: 5, y: 70) // Adjust the offset to position it below the last image
+                
+                
+
             }
             .ignoresSafeArea()
         }
