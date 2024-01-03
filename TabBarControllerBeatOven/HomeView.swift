@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  TabBarControllerBeatOven
 //
-//  Created by user2 on 02/01/24.
+//  Created by mkswagger on 02/01/24.
 //
 
 import SwiftUI
@@ -30,7 +30,7 @@ struct HomeView: View {
                         .padding(.leading, -10)
                 }
 
-                // Add the main image
+                // Add the first main image
                 Rectangle()
                     .foregroundColor(.clear)
                     .frame(width: 62.75348, height: 66.36922)
@@ -45,14 +45,101 @@ struct HomeView: View {
                     .padding(.top, -320)
                     .padding(.trailing, 297) // Adjust top and trailing padding to position the image below the text
 
-                // Add the smaller image within the main image
-                Image("person-prof1") // Replace "story-icon" with the actual name of your smaller image
+                // Add the first smaller image within the main image
+                Image("person-prof1")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 25, height: 25)
                     .clipShape(Circle())
                     .offset(x: 50, y: -270) // Adjust the offset to position the smaller image
-                    .padding(.trailing,360)
+                    .padding(.trailing, 360)
+
+                // Add the second main image
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 62.75348, height: 66.36922)
+                    .background(
+                        Image("home-prof2") // Replace "second-home-prof" with the actual name of your second big image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 62.753475189208984, height: 66.36921691894531)
+                            .clipped()
+                    )
+                    .cornerRadius(66.36922)
+                    .padding(.top, -320)
+                    .padding(.trailing, 145) // Adjust top and trailing padding to position the second main image
+
+                // Add the second smaller image to the right of the first smaller image
+                Image("person-prof2") // Replace "second-person-prof" with the actual name of your second small image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
+                    .offset(x: -50, y: -270)
+                // Add the third main image
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 62.75348, height: 66.36922)
+                    .background(
+                        Image("home-prof3") // Replace "second-home-prof" with the actual name of your second big image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 62.753475189208984, height: 66.36921691894531)
+                            .clipped()
+                    )
+                    .cornerRadius(66.36922)
+                    .padding(.top, -320)
+                    .padding(.trailing, -10) // Adjust top and trailing padding to position the second main image
+
+                // Add the second smaller image to the right of the first smaller image
+                Image("person-prof3") // Replace "second-person-prof" with the actual name of your second small image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
+                    .offset(x: 30, y: -272)
+                
+                // Add the 4th main image
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 62.75348, height: 66.36922)
+                    .background(
+                        Image("home-prof4") // Replace "second-home-prof" with the actual name of your second big image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 62.753475189208984, height: 66.36921691894531)
+                            .clipped()
+                    )
+                    .cornerRadius(66.36922)
+                    .padding(.top, -320)
+                    .padding(.leading, 160) // Adjust top and trailing padding to position the second main image
+
+                // Add the second smaller image to the right of the first smaller image
+                Image("person-prof4") // Replace "second-person-prof" with the actual name of your second small image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
+                    .offset(x: 105, y: -272)
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 62.75348, height: 66.36922)
+                    .background(
+                        Image("person-prof1") // Replace "second-home-prof" with the actual name of your second big image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 62.753475189208984, height: 66.36921691894531)
+                            .clipped()
+                    )
+                    .cornerRadius(66.36922)
+                    .padding(.top, -320)
+                    .padding(.leading, 307)
+                Image("home-prof1") // Replace "second-person-prof" with the actual name of your second small image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
+                    .offset(x: 175, y: -272)
             }
             .ignoresSafeArea()
         }
@@ -64,3 +151,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
