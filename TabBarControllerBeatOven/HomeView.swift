@@ -141,17 +141,39 @@ struct HomeView: View {
                     .clipShape(Circle())
                     .offset(x: 175, y: -272)
                 ZStack {
-                    Rectangle()
-                        .frame(width: 360, height: 55.33513)
-                        .foregroundColor(Color(red: 1, green: 0.79, blue: 0.7)) // Replace with the intended color
-                        .cornerRadius(100)
-                }
-                .padding(.horizontal, 30)
-                .padding(.vertical, -190)
-                .frame(width: 408, alignment: .topLeading)
-                HStack(alignment: .top, spacing: 10) {
+                        Rectangle()
+                            .frame(width: 360, height: 55.33513)
+                            .foregroundColor(Color(red: 1, green: 0.79, blue: 0.7))
+                            .cornerRadius(100)
+                    Text("Popular ")
+                           .font(Font.custom("SF Pro Display", size: 16))
+                           .multilineTextAlignment(.center)
+                           .foregroundColor(.black)
+                           .frame(width: 117, height: 16, alignment: .top)
+                           .offset(x: 75, y: -3)
+                                }
+                                .padding(.horizontal, 30)
+                                .padding(.vertical, -190)
+                                .frame(width: 408, alignment: .topLeading)
+
+                                HStack(alignment: .top, spacing: 10) {
                                     Rectangle()
                                         .frame(width: 200, height: 50)
+                                        .foregroundColor(Color("trending-color"))
+                                        .cornerRadius(100)
+                                        .overlay(
+                                            Text("Trending")
+                                                .font(Font.custom("SF Pro Display", size: 16))
+                                                .foregroundColor(.white)
+                                                .multilineTextAlignment(.center)
+                                        )
+                                }
+                                .padding(.horizontal, 15)
+                                .padding(.vertical, -190)
+                                .frame(width: 408, alignment: .topLeading)
+                HStack(alignment: .top, spacing: 10) {
+                                    Rectangle()
+                                        .frame(width: 200, height: 0)
                                         .foregroundColor(Color("trending-color")) // Change the color to "trending-color"
                                         .cornerRadius(100)
                                 }
