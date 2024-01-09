@@ -184,38 +184,24 @@ struct HomeView: View {
                                 .padding(.horizontal, 15)
                                 .padding(.vertical, -190)
                                 .frame(width: 408, alignment: .topLeading)
-                HStack {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 32, height: 32)
-                            .background(
-                                Image("post-prof")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 34.266, height: 45.000003814697266)
-                                    .clipped()
-                            )
-                            .cornerRadius(32)
-                            .offset(x: -90, y: -100)
-
-                        Text("mkswagger")
-                            .font(Font.custom("SF Pro Display", size: 14))
-                            .foregroundColor(.black)
-                            .padding(.leading, 5) // Adjust spacing between image and text
-                    }
+                
+                
+                //post section
+                
+                
                   
                 Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 298.41013, height: 275.58423)
                         .background(
-                            Image("post-1")
+                            Image("post-setup")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 298.4101257324219, height: 275.584228515625)
-                                .clipped()
+                                .frame(width: 320, height: 428)
+                               
                         )
-                        .cornerRadius(19.54361)
-                        .offset(x: 5, y: 70) // Adjust the offset to position it below the last image
+                       
+                        .offset(x: -3, y: 85) // Adjust the offset to position it below the last image
                 
                 
 
