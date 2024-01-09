@@ -129,7 +129,7 @@ struct HomeView: View {
                     .foregroundColor(.clear)
                     .frame(width: 62.75348, height: 66.36922)
                     .background(
-                        Image("person-prof1") 
+                        Image("person-prof1")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 62.753475189208984, height: 66.36921691894531)
@@ -184,18 +184,26 @@ struct HomeView: View {
                                 .padding(.horizontal, 15)
                                 .padding(.vertical, -190)
                                 .frame(width: 408, alignment: .topLeading)
-                Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 32, height: 32)
-                        .background(
-                            Image("post-prof")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 34.266, height: 45.000003814697266)
-                                .clipped()
-                        )
-                        .cornerRadius(32)
-                        .offset(x: -120, y: -100) // Adjust the offset to position it as needed
+                HStack {
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 32, height: 32)
+                            .background(
+                                Image("post-prof")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 34.266, height: 45.000003814697266)
+                                    .clipped()
+                            )
+                            .cornerRadius(32)
+                            .offset(x: -90, y: -100)
+
+                        Text("mkswagger")
+                            .font(Font.custom("SF Pro Display", size: 14))
+                            .foregroundColor(.black)
+                            .padding(.leading, 5) // Adjust spacing between image and text
+                    }
+                  
                 Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 298.41013, height: 275.58423)
