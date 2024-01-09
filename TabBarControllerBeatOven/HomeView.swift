@@ -40,11 +40,14 @@ struct HomeView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 62.753475189208984, height: 66.36921691894531)
                             .clipped()
+                        
                     )
+                    
+                    
                     .cornerRadius(66.36922)
+                
                     .padding(.top, -320)
-                    .padding(.trailing, 297) // Adjust top and trailing padding to position the image below the text
-
+                    .padding(.trailing, 297)
                 // Add the first smaller image within the main image
                 Image("person-prof1")
                     .resizable()
@@ -53,6 +56,7 @@ struct HomeView: View {
                     .clipShape(Circle())
                     .offset(x: 50, y: -270) // Adjust the offset to position the smaller image
                     .padding(.trailing, 360)
+                
 
                 // Add the second main image
                 Rectangle()
@@ -70,7 +74,7 @@ struct HomeView: View {
                     .padding(.trailing, 145) // Adjust top and trailing padding to position the second main image
 
                 // Add the second smaller image to the right of the first smaller image
-                Image("person-prof2") // Replace "second-person-prof" with the actual name of your second small image
+                Image("person-prof2")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 25, height: 25)
@@ -92,7 +96,7 @@ struct HomeView: View {
                     .padding(.trailing, -10) // Adjust top and trailing padding to position the second main image
 
                 // Add the second smaller image to the right of the first smaller image
-                Image("person-prof3") // Replace "second-person-prof" with the actual name of your second small image
+                Image("person-prof3")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 25, height: 25)
@@ -104,7 +108,7 @@ struct HomeView: View {
                     .foregroundColor(.clear)
                     .frame(width: 62.75348, height: 66.36922)
                     .background(
-                        Image("home-prof4") // Replace "second-home-prof" with the actual name of your second big image
+                        Image("home-prof4")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 62.753475189208984, height: 66.36921691894531)
@@ -115,7 +119,7 @@ struct HomeView: View {
                     .padding(.leading, 160) // Adjust top and trailing padding to position the second main image
 
                 // Add the second smaller image to the right of the first smaller image
-                Image("person-prof4") // Replace "second-person-prof" with the actual name of your second small image
+                Image("person-prof4")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 25, height: 25)
@@ -125,7 +129,7 @@ struct HomeView: View {
                     .foregroundColor(.clear)
                     .frame(width: 62.75348, height: 66.36922)
                     .background(
-                        Image("person-prof1") // Replace "second-home-prof" with the actual name of your second big image
+                        Image("person-prof1") 
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 62.753475189208984, height: 66.36921691894531)
@@ -134,7 +138,7 @@ struct HomeView: View {
                     .cornerRadius(66.36922)
                     .padding(.top, -320)
                     .padding(.leading, 307)
-                Image("home-prof1") // Replace "second-person-prof" with the actual name of your second small image
+                Image("home-prof1")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 25, height: 25)
@@ -164,8 +168,8 @@ struct HomeView: View {
                                         .overlay(
                                             Text("Trending")
                                                 .font(Font.custom("SF Pro Display", size: 16))
-                                                .foregroundColor(.white)
-                                                .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
                                         )
                                 }
                                 .padding(.horizontal, 15)
@@ -174,7 +178,7 @@ struct HomeView: View {
                 HStack(alignment: .top, spacing: 10) {
                                     Rectangle()
                                         .frame(width: 200, height: 0)
-                                        .foregroundColor(Color("trending-color")) // Change the color to "trending-color"
+                                        .foregroundColor(Color("trending-color"))
                                         .cornerRadius(100)
                                 }
                                 .padding(.horizontal, 15)
@@ -196,7 +200,7 @@ struct HomeView: View {
                         .foregroundColor(.clear)
                         .frame(width: 298.41013, height: 275.58423)
                         .background(
-                            Image("post-1") // Replace with the actual path to the image
+                            Image("post-1")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 298.4101257324219, height: 275.584228515625)
