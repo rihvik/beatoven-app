@@ -21,6 +21,7 @@
 		0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D802B35F00E0065373A /* ProfilePage.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
 		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
+		98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		0FF13D802B35F00E0065373A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
 		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
+		98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCreatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */,
 				0FF119A22B4414E600E696DC /* ColabView.swift */,
 				0FF1197C2B3EE81600E696DC /* PortfolioView.swift */,
+				98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */,
 				0FF13D622B35E6850065373A /* CustomTabBar.swift */,
 				0FF1197E2B409D2200E696DC /* DiscoverView.swift */,
 				0FF119A02B4358FC00E696DC /* HomeView.swift */,
@@ -171,6 +174,7 @@
 				0FF13D572B35E6510065373A /* ContentView.swift in Sources */,
 				0FF1197D2B3EE81600E696DC /* PortfolioView.swift in Sources */,
 				0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */,
+				98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */,
 				0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,
 				0FF119A12B4358FC00E696DC /* HomeView.swift in Sources */,
