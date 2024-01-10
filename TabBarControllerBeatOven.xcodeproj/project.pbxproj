@@ -20,6 +20,7 @@
 		0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D622B35E6850065373A /* CustomTabBar.swift */; };
 		0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D802B35F00E0065373A /* ProfilePage.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
+		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0FF13D622B35E6850065373A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		0FF13D802B35F00E0065373A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
+		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */,
 				0FF13D802B35F00E0065373A /* ProfilePage.swift */,
+				98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */,
 				0FF119802B40B1FB00E696DC /* ProfilePage2.swift */,
 				0FF13D562B35E6510065373A /* ContentView.swift */,
 				0FF119A42B441CA400E696DC /* TrackLibView.swift */,
@@ -175,6 +178,7 @@
 				0FF1197F2B409D2200E696DC /* DiscoverView.swift in Sources */,
 				0FF119812B40B1FB00E696DC /* ProfilePage2.swift in Sources */,
 				98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */,
+				98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
