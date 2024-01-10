@@ -181,12 +181,23 @@ struct CollabReqView: View {
                         .foregroundColor(.black)
                 }
                 
-                // Add more VStacks for each user with their respective images and names
+               
                 
             }.offset(x:6,y:436)
 
             .padding(.bottom, 450)
-
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 236.25333, height: 55)
+              .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+              .cornerRadius(100)
+              .offset(x:0,y:320)
+            Text("Send Request")
+              .font(Font.custom("Space Grotesk", size: 16))
+              .multilineTextAlignment(.center)
+              .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+              .frame(width: 105.56, alignment: .top)
+              .offset(x:4,y:320)
         }
         .frame(width: 393, height: 852)
         .background(Color(red: 0.99, green: 0.87, blue: 0.82))
