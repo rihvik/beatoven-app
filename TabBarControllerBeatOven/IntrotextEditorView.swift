@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IntrotextEditorView: View {
+    @State private var userText = ""
     var body: some View {
         ZStack {
             Text("Adding Text")
@@ -39,6 +40,18 @@ struct IntrotextEditorView: View {
               .background(Color(red: 0.99, green: 0.87, blue: 0.82))
               .cornerRadius(10)
               .offset(y:-10)
+              .overlay(
+                VStack(alignment: .leading) {
+                    TextField("Enter your text here...", text: $userText)
+            .font(.system(size: 20, weight: .light))
+                .padding()
+
+                                        Text("\(userText.count)/1000 words")
+                                            .font(.caption)
+                                            .foregroundColor(userText.count > 900 ? .red : .gray)
+                                            .padding(.bottom)
+                                    }
+                             )
             
             Rectangle()
               .foregroundColor(.clear)
