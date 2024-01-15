@@ -22,6 +22,7 @@
 		983137AF2B5530970098F9B5 /* PortfolioEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */; };
 		983137B12B554C5E0098F9B5 /* VoiceTrackAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */; };
 		983137B32B5550CF0098F9B5 /* IntrotextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */; };
+		983137B52B557EA70098F9B5 /* NotableWorksAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
 		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
 		98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */; };
@@ -44,6 +45,7 @@
 		983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioEditorView.swift; sourceTree = "<group>"; };
 		983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTrackAddView.swift; sourceTree = "<group>"; };
 		983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrotextEditorView.swift; sourceTree = "<group>"; };
+		983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotableWorksAddView.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
 		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
 		98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCreatorView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */,
 				983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */,
 				983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */,
+				983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */,
 			);
 			path = TabBarControllerBeatOven;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				983137B32B5550CF0098F9B5 /* IntrotextEditorView.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,
 				0FF119A12B4358FC00E696DC /* HomeView.swift in Sources */,
+				983137B52B557EA70098F9B5 /* NotableWorksAddView.swift in Sources */,
 				983137AF2B5530970098F9B5 /* PortfolioEditorView.swift in Sources */,
 				0FF119A32B4414E600E696DC /* ColabView.swift in Sources */,
 				0FF1197F2B409D2200E696DC /* DiscoverView.swift in Sources */,
