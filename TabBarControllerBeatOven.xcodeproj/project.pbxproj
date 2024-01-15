@@ -23,6 +23,7 @@
 		983137B12B554C5E0098F9B5 /* VoiceTrackAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */; };
 		983137B32B5550CF0098F9B5 /* IntrotextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */; };
 		983137B52B557EA70098F9B5 /* NotableWorksAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */; };
+		983137B72B5583EF0098F9B5 /* SocialMediaAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B62B5583EF0098F9B5 /* SocialMediaAddView.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
 		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
 		98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */; };
@@ -46,6 +47,7 @@
 		983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTrackAddView.swift; sourceTree = "<group>"; };
 		983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrotextEditorView.swift; sourceTree = "<group>"; };
 		983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotableWorksAddView.swift; sourceTree = "<group>"; };
+		983137B62B5583EF0098F9B5 /* SocialMediaAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaAddView.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
 		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
 		98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCreatorView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				983137B02B554C5E0098F9B5 /* VoiceTrackAddView.swift */,
 				983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */,
 				983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */,
+				983137B62B5583EF0098F9B5 /* SocialMediaAddView.swift */,
 			);
 			path = TabBarControllerBeatOven;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */,
 				98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */,
 				983137B12B554C5E0098F9B5 /* VoiceTrackAddView.swift in Sources */,
+				983137B72B5583EF0098F9B5 /* SocialMediaAddView.swift in Sources */,
 				0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */,
 				983137B32B5550CF0098F9B5 /* IntrotextEditorView.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,
