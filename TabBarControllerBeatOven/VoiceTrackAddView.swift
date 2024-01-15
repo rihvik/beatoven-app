@@ -37,22 +37,22 @@ struct VoiceTrackAddView: View {
               .frame(width: 327, alignment: .topLeading)
               .offset(x:0,y:-240)
             Image("voicetrack")
-                .offset(y:-170)
+                .offset(y:-160)
             
             Image("voicetrack")
-                .offset(y:-100)
+                .offset(y:-90)
             
             Image("voicetrack")
-                .offset(y:-30)
+                .offset(y:-20)
             
             Image("voicetrack")
-                .offset(y:40)
+                .offset(y:50)
             
             Image("voicetrack")
-                .offset(y:110)
+                .offset(y:120)
             
             Image("voicetrack")
-                .offset(y:180)
+                .offset(y:190)
             
             Rectangle()
               .foregroundColor(.clear)
