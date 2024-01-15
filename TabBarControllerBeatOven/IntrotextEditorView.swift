@@ -18,6 +18,9 @@ struct IntrotextEditorView: View {
               .frame(width: 271, alignment: .top)
               .offset(y:-350)
             
+            Image("back-arrow")
+                .offset(x:-165,y:-350)
+            
             Rectangle()
               .foregroundColor(.clear)
               .frame(width: 365, height: 556)
@@ -34,6 +37,9 @@ struct IntrotextEditorView: View {
               .frame(width: 185, height: 31, alignment: .topLeading)
               .offset(x:-70,y:-270)
             
+            Image("delete-icon")
+                .offset(x:150,y:-270)
+            
             Rectangle()
               .foregroundColor(.clear)
               .frame(width: 323, height: 455)
@@ -43,15 +49,16 @@ struct IntrotextEditorView: View {
               .overlay(
                 VStack(alignment: .leading) {
                     TextField("Enter your text here...", text: $userText)
-            .font(.system(size: 20, weight: .light))
-                .padding()
+            .font(.system(size: 25, weight: .light))
+            .offset(x:10,y:-170)
 
-                                        Text("\(userText.count)/1000 words")
-                                            .font(.caption)
+            Text("\(userText.count)/1000 words")
+                        .font(.headline)
                                             .foregroundColor(userText.count > 900 ? .red : .gray)
                                             .padding(.bottom)
+                                            .offset(x:200,y:150)
                                     }
-                             )
+              )
             
             Rectangle()
               .foregroundColor(.clear)
