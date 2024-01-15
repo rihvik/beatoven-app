@@ -125,18 +125,21 @@ struct PortfolioEditorView: View {
                                         .font(.system(size: 18))
                                         .foregroundColor(.black)
                                         .padding(.bottom,4)
+                                        .offset(x:19)
                                     Text("Aura")
                                         .font(.system(size: 14))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(.black)
-                                        .offset(x:-55)
+                                        .offset(x:-40)
                                 }.padding(.trailing,150)
                                 Image("Album1")
                                     .resizable()
                                     .frame(width: 54.25,height: 58)
                                     .offset(x:-30)
                                 
-                                
+                                Image("delete-icon")
+                                .frame(width: 22.00003, height: 24)
+                                .offset(x:-25)
                             }
                             HStack(){
                                 VStack{
@@ -144,16 +147,21 @@ struct PortfolioEditorView: View {
                                         .font(.system(size: 18))
                                         .foregroundColor(.black)
                                         .padding(.bottom,4)
+                                        .offset(x:19)
                                     Text("Aura")
                                         .font(.system(size: 14))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(.black)
-                                        .offset(x:-55)
+                                        .offset(x:-40)
                                 }.padding(.trailing,150)
                                 Image("Album1")
                                     .resizable()
                                     .frame(width: 54.25,height: 58)
                                     .offset(x:-30)
+                                
+                                Image("delete-icon")
+                                .frame(width: 22.00003, height: 24)
+                                .offset(x:-25)
                             }
                            
                             HStack(){
@@ -162,16 +170,21 @@ struct PortfolioEditorView: View {
                                         .font(.system(size: 18))
                                         .foregroundColor(.black)
                                         .padding(.bottom,4)
+                                        .offset(x:19)
                                     Text("Aura")
                                         .font(.system(size: 14))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(.black)
-                                        .offset(x:-55)
+                                        .offset(x:-40)
                                 }.padding(.trailing,150)
                                 Image("Album1")
                                     .resizable()
                                     .frame(width: 54.25,height: 58)
                                     .offset(x:-30)
+                                
+                                Image("delete-icon")
+                                .frame(width: 22.00003, height: 24)
+                                .offset(x:-25)
                                 
                             }
                             HStack(){
@@ -180,17 +193,21 @@ struct PortfolioEditorView: View {
                                         .font(.system(size: 18))
                                         .foregroundColor(.black)
                                         .padding(.bottom,4)
+                                        .offset(x:19)
                                     Text("Aura")
                                         .font(.system(size: 14))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(.black)
-                                        .offset(x:-55)
+                                        .offset(x:-40)
                                 }.padding(.trailing,150)
                                 Image("Album1")
                                     .resizable()
                                     .frame(width: 54.25,height: 58)
                                     .offset(x:-30)
                                 
+                                Image("delete-icon")
+                                .frame(width: 22.00003, height: 24)
+                                .offset(x:-25)
                             }
                             HStack(){
                                 VStack{
@@ -198,17 +215,21 @@ struct PortfolioEditorView: View {
                                         .font(.system(size: 18))
                                         .foregroundColor(.black)
                                         .padding(.bottom,4)
+                                        .offset(x:19)
                                     Text("Aura")
                                         .font(.system(size: 14))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(.black)
-                                        .offset(x:-55)
+                                        .offset(x:-40)
                                 }.padding(.trailing,150)
                                 Image("Album1")
                                     .resizable()
                                     .frame(width: 54.25,height: 58)
                                     .offset(x:-30)
                                 
+                                Image("delete-icon")
+                                .frame(width: 22.00003, height: 24)
+                                .offset(x:-25)
                                 
                             }
 
@@ -220,26 +241,41 @@ struct PortfolioEditorView: View {
                                 .resizable()
                                 .frame(width: 40,height: 40)
                                 .padding(7)
+                            Image("delete-icon")
+                            .frame(width: 22.00003, height: 24)
+                            .offset(x:-25,y:-20)
+                            
                             Image("Meta")
                                 .resizable()
                                 .frame(width: 40,height: 40)
                                 .padding(7)
+                            Image("delete-icon")
+                            .frame(width: 22.00003, height: 24)
+                            .offset(x:-25,y:-20)
+                            
                             Image("Spotify")
                                 .resizable()
                                 .frame(width: 40,height: 40)
                                 .padding(7)
+                            Image("delete-icon")
+                            .frame(width: 22.00003, height: 24)
+                            .offset(x:-25,y:-20)
+                                
                             Image("X")
                                 .resizable()
                                 .frame(width: 40,height: 40)
                                 .padding(7)
+                            Image("delete-icon")
+                            .frame(width: 22.00003, height: 24)
+                            .offset(x:-25,y:-20)
 
 
 
                         }.offset(y:70)
                         Text("Copyright ©2023 All rights reserved ")
-                            .font(.system(size: 14))
+                            .font(.system(size: 15))
                             .foregroundColor(.black)
-                            .offset(y:70)
+                            .offset(y:90)
                         
                         
                         
