@@ -64,19 +64,28 @@ struct PortfolioEditorView: View {
                           .frame(width: 328, alignment: .top)
                           .offset(y:-25)
                         
+                        Image("delete-icon")
+                .frame(width: 22.00003, height: 24)
+                .offset(x:155,y:-150)
+                        
                         Rectangle()
                           .foregroundColor(.clear)
                           .frame(width: 208, height: 47)
                           .background(Color(red: 1, green: 0.39, blue: 0.39))
                           .cornerRadius(2)
-                          .offset(y:60)
+                          .offset(y:30)
                         
                         Text("Share Profile")
                           .font(Font.custom("Catamaran", size: 20))
                           .multilineTextAlignment(.center)
                           .foregroundColor(.black)
                           .frame(width: 167, height: 21, alignment: .top)
-                          .offset(y:15)
+                          .offset(y:-15)
+                        
+                        Text("Pinned Works")
+                          .font(Font.custom("Catamaran", size: 24))
+                          .foregroundColor(.black)
+                          .offset(y:90)
                         
                         Spacer() // Push content to the top
                     }
