@@ -24,6 +24,7 @@
 		983137B32B5550CF0098F9B5 /* IntrotextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */; };
 		983137B52B557EA70098F9B5 /* NotableWorksAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */; };
 		983137B72B5583EF0098F9B5 /* SocialMediaAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B62B5583EF0098F9B5 /* SocialMediaAddView.swift */; };
+		983137B92B558F830098F9B5 /* DMChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137B82B558F830098F9B5 /* DMChatView.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
 		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
 		98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */; };
@@ -48,6 +49,7 @@
 		983137B22B5550CF0098F9B5 /* IntrotextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrotextEditorView.swift; sourceTree = "<group>"; };
 		983137B42B557EA70098F9B5 /* NotableWorksAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotableWorksAddView.swift; sourceTree = "<group>"; };
 		983137B62B5583EF0098F9B5 /* SocialMediaAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaAddView.swift; sourceTree = "<group>"; };
+		983137B82B558F830098F9B5 /* DMChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMChatView.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
 		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
 		98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCreatorView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0FF13D542B35E6510065373A /* TabBarControllerBeatOvenApp.swift */,
+				983137B82B558F830098F9B5 /* DMChatView.swift */,
 				0FF13D802B35F00E0065373A /* ProfilePage.swift */,
 				98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */,
 				0FF119802B40B1FB00E696DC /* ProfilePage2.swift */,
@@ -203,6 +206,7 @@
 				0FF119812B40B1FB00E696DC /* ProfilePage2.swift in Sources */,
 				98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */,
 				98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */,
+				983137B92B558F830098F9B5 /* DMChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,12 @@ struct ContentView: View {
                             }
                             .tag(tab)
                         }
+                        else if tab.rawValue == "bubble.left"{
+                            HStack {
+                                DMChatView()
+                            }
+                            .tag(tab)
+                        }
                         else {
                             HStack {
                                 Image(systemName: tab.rawValue)
