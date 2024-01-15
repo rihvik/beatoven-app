@@ -19,6 +19,7 @@
 		0FF13D5C2B35E6520065373A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF13D5B2B35E6520065373A /* Preview Assets.xcassets */; };
 		0FF13D632B35E6850065373A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D622B35E6850065373A /* CustomTabBar.swift */; };
 		0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF13D802B35F00E0065373A /* ProfilePage.swift */; };
+		983137AF2B5530970098F9B5 /* PortfolioEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */; };
 		98AEDF402B4E3DD800658674 /* CollabReqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */; };
 		98AEDF422B4E4D1300658674 /* UploadSoundtrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */; };
 		98AEDF442B4E9D9500658674 /* PortfolioCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */; };
@@ -38,6 +39,7 @@
 		0FF13D5B2B35E6520065373A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FF13D622B35E6850065373A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		0FF13D802B35F00E0065373A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioEditorView.swift; sourceTree = "<group>"; };
 		98AEDF3F2B4E3DD800658674 /* CollabReqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabReqView.swift; sourceTree = "<group>"; };
 		98AEDF412B4E4D1300658674 /* UploadSoundtrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSoundtrackView.swift; sourceTree = "<group>"; };
 		98AEDF432B4E9D9500658674 /* PortfolioCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCreatorView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0FF119A02B4358FC00E696DC /* HomeView.swift */,
 				0FF13D582B35E6520065373A /* Assets.xcassets */,
 				0FF13D5A2B35E6520065373A /* Preview Content */,
+				983137AE2B5530970098F9B5 /* PortfolioEditorView.swift */,
 			);
 			path = TabBarControllerBeatOven;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				0FF13D812B35F00E0065373A /* ProfilePage.swift in Sources */,
 				0FF13D552B35E6510065373A /* TabBarControllerBeatOvenApp.swift in Sources */,
 				0FF119A12B4358FC00E696DC /* HomeView.swift in Sources */,
+				983137AF2B5530970098F9B5 /* PortfolioEditorView.swift in Sources */,
 				0FF119A32B4414E600E696DC /* ColabView.swift in Sources */,
 				0FF1197F2B409D2200E696DC /* DiscoverView.swift in Sources */,
 				0FF119812B40B1FB00E696DC /* ProfilePage2.swift in Sources */,
