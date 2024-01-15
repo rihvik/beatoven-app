@@ -87,12 +87,12 @@ struct PortfolioCreatorView: View {
             
             Rectangle()
               .foregroundColor(.clear)
-              .frame(width: 155, height: 155)
+              .frame(width: 155, height: 200)
               .background(
                 Image("addnotableworks")
                   .resizable()
                   .aspectRatio(contentMode: .fill)
-                  .frame(width: 170, height: 170)
+                  .frame(width: 170, height: 200)
                   .clipped()
               )
               .cornerRadius(15)
@@ -101,7 +101,7 @@ struct PortfolioCreatorView: View {
             
             Rectangle()
               .foregroundColor(.clear)
-              .frame(width: 155, height: 155)
+              .frame(width: 155, height: 165)
               .background(
                 Image("addsocial-mediaprofiles")
                   .resizable()
@@ -111,7 +111,7 @@ struct PortfolioCreatorView: View {
               )
               .cornerRadius(15)
               .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
-              .offset(x:80,y:150)
+              .offset(x:80,y:160)
             Rectangle()
               .foregroundColor(.clear)
               .frame(width: 235, height: 55)
