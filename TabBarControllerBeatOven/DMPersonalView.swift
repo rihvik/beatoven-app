@@ -47,6 +47,87 @@ struct DMPersonalView: View {
               .offset(x:-30,y:-325)
             
             Image("more-icon").offset(x:150,y:-350)
+            
+            Text("TODAY, JULY 15")
+              .font(Font.custom("Space Grotesk", size: 15))
+              .foregroundColor(Color(red: 0.52, green: 0.57, blue: 0.66))
+              .offset(y:-270)
+            //text messages
+            HStack(alignment: .top, spacing: 10) {
+                Text("hey i loved your works! 😁 ")
+            }
+            .padding(14)
+            .background(Color(red: 0.97, green: 0.99, blue: 1))
+            .cornerRadius(8)
+            
+            .offset(x:-65,y:-220)
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Oh thankyouuu Evelyn!   ")
+                  .font(Font.custom("Space Grotesk", size: 15))
+                  .multilineTextAlignment(.trailing)
+                  .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+                  .frame(width: 171, alignment: .topTrailing)
+            }
+            .padding(14)
+            .background(Color(red: 0.26, green: 0.31, blue: 0.39))
+            .cornerRadius(8)
+            .offset(x:80,y:-155)
+            
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Wanna Collaborate?😀 ")
+                  .font(Font.custom("Space Grotesk", size: 16))
+                  .multilineTextAlignment(.trailing)
+                  .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+                  .frame(width: 171, alignment: .topTrailing)
+            }
+            .padding(14)
+            .background(Color(red: 0.26, green: 0.31, blue: 0.39))
+            .cornerRadius(8)
+            .offset(x:80,y:-95)
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Ig  I have some Ideas !")
+                  .font(Font.custom("Space Grotesk", size: 16))
+                  .multilineTextAlignment(.leading)
+                  .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+                  .frame(width: 171, alignment: .topTrailing)
+            }
+            .padding(14)
+            .background(Color(red: 0.26, green: 0.31, blue: 0.39))
+            .cornerRadius(8)
+            .offset(x:80,y:-35)
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Yeah Sure thing! ☺")
+                  .font(Font.custom("Space Grotesk", size: 15))
+                  .foregroundColor(Color(red: 0.13, green: 0.19, blue: 0.25))
+            }
+            .padding(14)
+            .background(Color(red: 0.97, green: 0.99, blue: 1))
+            .cornerRadius(8)
+            .offset(x:-100,y:25)
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Genre?")
+                  .font(Font.custom("Space Grotesk", size: 15))
+                  .foregroundColor(Color(red: 0.13, green: 0.19, blue: 0.25))
+            }
+            .padding(14)
+            .background(Color(red: 0.97, green: 0.99, blue: 1))
+            .cornerRadius(8)
+            .offset(x:-143,y:83)
+            
+            HStack(alignment: .center, spacing: 10) {
+                Text("Rock mostly with a bit of jazz")
+                  .font(Font.custom("Space Grotesk", size: 15))
+                  .multilineTextAlignment(.trailing)
+                  .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+            }
+            .padding(14)
+            .background(Color(red: 0.26, green: 0.31, blue: 0.39))
+            .cornerRadius(8)
         }
         .frame(width: 393, height: 852)
         .background(Color(red: 0.99, green: 0.87, blue: 0.82))
