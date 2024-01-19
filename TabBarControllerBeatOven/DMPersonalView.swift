@@ -124,11 +124,50 @@ struct DMPersonalView: View {
                   .font(Font.custom("Space Grotesk", size: 15))
                   .multilineTextAlignment(.trailing)
                   .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+                
             }
             .padding(14)
             .background(Color(red: 0.26, green: 0.31, blue: 0.39))
             .cornerRadius(8)
+            .offset(x:75,y:120)
+            
+            HStack(alignment: .center, spacing: 10) {
+                Text("Might need you on vocals!")
+                  .font(Font.custom("Space Grotesk", size: 14))
+                  .multilineTextAlignment(.trailing)
+                  .foregroundColor(Color(red: 0.97, green: 0.99, blue: 1))
+            }
+            .padding(15)
+            .background(Color(red: 0.26, green: 0.31, blue: 0.39))
+            .cornerRadius(8)
+            .offset(x:90,y:175)
+            
+            HStack(alignment: .top, spacing: 10) {
+                Text("Cool! Send me a sample tune !")
+                  .font(Font.custom("Space Grotesk", size: 14))
+                  .foregroundColor(Color(red: 0.13, green: 0.19, blue: 0.25))
+            }
+            .padding(15)
+            .background(Color(red: 0.97, green: 0.99, blue: 1))
+            .cornerRadius(8)
+            .offset(x:-75,y:235)
+            
+            //message bar
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 392, height: 93)
+              .background(Color(red: 1, green: 0.79, blue: 0.7))
+              .offset(y:330)
+            
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 354, height: 54)
+              .background(Color(red: 0.97, green: 0.99, blue: 1))
+              .cornerRadius(48)
+              .offset(y:326)
         }
+        
+        
         .frame(width: 393, height: 852)
         .background(Color(red: 0.99, green: 0.87, blue: 0.82))
         
