@@ -248,8 +248,355 @@ struct HomeView: View {
                         
                     }.frame(width: 393, height: 400)
                     .offset(y:140)
+                    .padding(.bottom,100)
+                    ScrollView(.horizontal, showsIndicators: false){
+                        VStack(alignment: .leading){
+                            Text("Opus")
+                            .font(.system(size: 24))
+                              .fontWeight(.bold)
+                              .multilineTextAlignment(.leading)
+                              .foregroundColor(Color(red: 0.92, green: 0.36, blue: 0.25))
+                              .padding(.leading,15)
+                            
+                            HStack{
+                                ZStack{
+                                    
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 161.00, height: 253.00)
+                                        .aspectRatio(contentMode: .fit)
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    RoundedRectangle(cornerRadius: 10)
+                                      .fill(LinearGradient(gradient: Gradient(stops: [.init(color: Color.white.opacity(0), location: 0.00), .init(color: Color.white.opacity(0.60), location: 0.30), .init(color: Color.white, location: 0.62)]), startPoint: .top, endPoint: .bottom))
+                                      .frame(width: 161.00, height: 38.00)
+                                      .offset(y:107)
+                                    Text(":10")
+                                        .font(.system(size: 14))
+                                      .multilineTextAlignment(.center)
+                                      .foregroundColor(Color.black)
+                                      .frame(minWidth: 42.87, minHeight: 16.96, alignment: .top)
+                                      .offset(x:60,y:-105)
+                                    HStack {
+                                        Text("Neque porro quisquam\nest qui dolorem ipsu")
+                                          .font(Font.custom("Catamaran-Bold", size: 12))
+                                          .multilineTextAlignment(.center)
+                                          .foregroundColor(Color.black)
+                                          .frame(minWidth: 40, minHeight: 40.00, alignment: .top)
+                                        Image(systemName: "ellipsis").rotationEffect(.degrees(-90))
+                                            .offset(y:-4)
+                                        
+                                    }.offset(y:107)
+                                    Image(systemName: "play.fill")
+                                        .resizable()
+                                        .foregroundColor(Color(red: 0.92, green: 0.3, blue: 0.26))
+                                        .frame(width: 24, height: 24)
+
+
+                                }.padding(.leading)
+                                ZStack{
+                                    
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 161.00, height: 253.00)
+                                        .aspectRatio(contentMode: .fit)
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    RoundedRectangle(cornerRadius: 10)
+                                      .fill(LinearGradient(gradient: Gradient(stops: [.init(color: Color.white.opacity(0), location: 0.00), .init(color: Color.white.opacity(0.60), location: 0.30), .init(color: Color.white, location: 0.62)]), startPoint: .top, endPoint: .bottom))
+                                      .frame(width: 161.00, height: 38.00)
+                                      .offset(y:107)
+                                    Text(":10")
+                                        .font(.system(size: 14))
+                                      .multilineTextAlignment(.center)
+                                      .foregroundColor(Color.black)
+                                      .frame(minWidth: 42.87, minHeight: 16.96, alignment: .top)
+                                      .offset(x:60,y:-105)
+                                    HStack {
+                                        Text("Neque porro quisquam\nest qui dolorem ipsu")
+                                          .font(Font.custom("Catamaran-Bold", size: 12))
+                                          .multilineTextAlignment(.center)
+                                          .foregroundColor(Color.black)
+                                          .frame(minWidth: 40, minHeight: 40.00, alignment: .top)
+                                        Image(systemName: "ellipsis").rotationEffect(.degrees(-90))
+                                            .offset(y:-4)
+                                        
+                                    }.offset(y:107)
+                                    Image(systemName: "play.fill")
+                                        .resizable()
+                                        .foregroundColor(Color(red: 0.92, green: 0.3, blue: 0.26))
+                                        .frame(width: 24, height: 24)
+
+
+                                }.padding(.leading)
+                                ZStack{
+                                    
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 161.00, height: 253.00)
+                                        .aspectRatio(contentMode: .fit)
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    RoundedRectangle(cornerRadius: 10)
+                                      .fill(LinearGradient(gradient: Gradient(stops: [.init(color: Color.white.opacity(0), location: 0.00), .init(color: Color.white.opacity(0.60), location: 0.30), .init(color: Color.white, location: 0.62)]), startPoint: .top, endPoint: .bottom))
+                                      .frame(width: 161.00, height: 38.00)
+                                      .offset(y:107)
+                                    Text(":10")
+                                        .font(.system(size: 14))
+                                      .multilineTextAlignment(.center)
+                                      .foregroundColor(Color.black)
+                                      .frame(minWidth: 42.87, minHeight: 16.96, alignment: .top)
+                                      .offset(x:60,y:-105)
+                                    HStack {
+                                        Text("Neque porro quisquam\nest qui dolorem ipsu")
+                                          .font(Font.custom("Catamaran-Bold", size: 12))
+                                          .multilineTextAlignment(.center)
+                                          .foregroundColor(Color.black)
+                                          .frame(minWidth: 40, minHeight: 40.00, alignment: .top)
+                                        Image(systemName: "ellipsis").rotationEffect(.degrees(-90))
+                                            .offset(y:-4)
+                                        
+                                    }.offset(y:107)
+                                    Image(systemName: "play.fill")
+                                        .resizable()
+                                        .foregroundColor(Color(red: 0.92, green: 0.3, blue: 0.26))
+                                        .frame(width: 24, height: 24)
+
+
+                                }.padding(.leading)
+                                
+                            }
+                        }
+                        
+                        
+                        
+                        
+                        
+                    }.frame(width: 393, height: 370)
+                    .background(Color(red: 0.369, green: 0.16, blue: 0.12))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .offset(y:140)
+                    .padding(.bottom,100)
+                    ScrollView(.vertical, showsIndicators: false){
+                        VStack(alignment: .center){
+                            //Discover
+                            Text("Discover ").font(.system(size: 25, weight: .bold)).foregroundColor(Color(#colorLiteral(red: 0.92, green: 0.3, blue: 0.26, alpha: 1))).multilineTextAlignment(.center)
+                            VStack(alignment: .center){
+                                HStack(spacing:40){
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    VStack(alignment: .leading){
+                                        //Large
+                                        Text("Rohini").font(.system(size: 16)).foregroundColor(Color(#colorLiteral(red: 0.41, green: 0.43, blue: 0.43, alpha: 1)))
+                                        Text("Delhi,IN").font(.system(size: 14)).foregroundColor(Color(#colorLiteral(red: 0.37, green: 0.16, blue: 0.12, alpha: 1)))
+                                    }.padding(.trailing,70)
+                                        .padding(.leading,-10)
+                                    Image(systemName: "arrow.up.forward.app.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                }
+                                //Divider
+                                Rectangle()
+                                    .fill(Color(#colorLiteral(red: 0.9882352948188782, green: 0.8705882430076599, blue: 0.8156862854957581, alpha: 1)))
+                                .frame(width: 230, height: 3)
+                                .offset(x:3)
+                                HStack{
+                                    //Button
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    
+                                }
+                                .shadow( radius: 1)
+                                
+                            }
+                            .frame(width: 341, height: 214)
+                            .background(Color(#colorLiteral(red: 1, green: 0.7944080829620361, blue: 0.696666955947876, alpha: 1)))
+                            .shadow( radius: 1)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            VStack(alignment: .center){
+                                HStack(spacing:40){
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    VStack(alignment: .leading){
+                                        //Large
+                                        Text("Rohini").font(.system(size: 16)).foregroundColor(Color(#colorLiteral(red: 0.41, green: 0.43, blue: 0.43, alpha: 1)))
+                                        Text("Delhi,IN").font(.system(size: 14)).foregroundColor(Color(#colorLiteral(red: 0.37, green: 0.16, blue: 0.12, alpha: 1)))
+                                    }.padding(.trailing,70)
+                                        .padding(.leading,-10)
+                                    Image(systemName: "arrow.up.forward.app.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                }
+                                //Divider
+                                Rectangle()
+                                    .fill(Color(#colorLiteral(red: 0.9882352948188782, green: 0.8705882430076599, blue: 0.8156862854957581, alpha: 1)))
+                                .frame(width: 230, height: 3)
+                                .offset(x:3)
+                                HStack{
+                                    //Button
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    
+                                }
+                                .shadow( radius: 1)
+                                
+                            }
+                            .frame(width: 341, height: 214)
+                            .background(Color(#colorLiteral(red: 1, green: 0.7944080829620361, blue: 0.696666955947876, alpha: 1)))
+                            .shadow( radius: 1)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            VStack(alignment: .center){
+                                HStack(spacing:40){
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    VStack(alignment: .leading){
+                                        //Large
+                                        Text("Rohini").font(.system(size: 16)).foregroundColor(Color(#colorLiteral(red: 0.41, green: 0.43, blue: 0.43, alpha: 1)))
+                                        Text("Delhi,IN").font(.system(size: 14)).foregroundColor(Color(#colorLiteral(red: 0.37, green: 0.16, blue: 0.12, alpha: 1)))
+                                    }.padding(.trailing,70)
+                                        .padding(.leading,-10)
+                                    Image(systemName: "arrow.up.forward.app.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                }
+                                //Divider
+                                Rectangle()
+                                    .fill(Color(#colorLiteral(red: 0.9882352948188782, green: 0.8705882430076599, blue: 0.8156862854957581, alpha: 1)))
+                                .frame(width: 230, height: 3)
+                                .offset(x:3)
+                                HStack{
+                                    //Button
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    
+                                }
+                                .shadow( radius: 1)
+                                
+                            }
+                            .frame(width: 341, height: 214)
+                            .background(Color(#colorLiteral(red: 1, green: 0.7944080829620361, blue: 0.696666955947876, alpha: 1)))
+                            .shadow( radius: 1)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            VStack(alignment: .center){
+                                HStack(spacing:40){
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    VStack(alignment: .leading){
+                                        //Large
+                                        Text("Rohini").font(.system(size: 16)).foregroundColor(Color(#colorLiteral(red: 0.41, green: 0.43, blue: 0.43, alpha: 1)))
+                                        Text("Delhi,IN").font(.system(size: 14)).foregroundColor(Color(#colorLiteral(red: 0.37, green: 0.16, blue: 0.12, alpha: 1)))
+                                    }.padding(.trailing,70)
+                                        .padding(.leading,-10)
+                                    Image(systemName: "arrow.up.forward.app.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                }
+                                //Divider
+                                Rectangle()
+                                    .fill(Color(#colorLiteral(red: 0.9882352948188782, green: 0.8705882430076599, blue: 0.8156862854957581, alpha: 1)))
+                                .frame(width: 230, height: 3)
+                                .offset(x:3)
+                                HStack{
+                                    //Button
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    Text("Skill").font(.custom("Poppins SemiBold", size: 14)).foregroundColor(Color(#colorLiteral(red: 1, green: 0.79, blue: 0.7, alpha: 1))).multilineTextAlignment(.center)
+                                        .frame(width: 98, height: 32)
+                                        .background(Color(#colorLiteral(red: 0.37254902720451355, green: 0.1568627506494522, blue: 0.11764705926179886, alpha: 1)))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .shadow( radius: 1)
+                                    
+                                }
+                                .shadow( radius: 1)
+                                
+                            }
+                            .frame(width: 341, height: 214)
+                            .background(Color(#colorLiteral(red: 1, green: 0.7944080829620361, blue: 0.696666955947876, alpha: 1)))
+                            .shadow( radius: 1)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            
+                            
+                            
+                            
+                            
+                        }
+                    }.frame(width: 393, height: 555)
+                        
+                        .offset(y:140)
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    VStack{}.padding(.bottom,1000)
                 }
                 
                 
