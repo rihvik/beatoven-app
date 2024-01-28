@@ -577,8 +577,128 @@ struct HomeView: View {
                             
                         }
                     }.frame(width: 393, height: 555)
-                        
-                        .offset(y:140)
+                    .offset(y:140)
+                    .padding(.bottom,100)
+                    
+                    ScrollView(.horizontal, showsIndicators: false){
+                        VStack(alignment: .leading){
+                            Text("Popular Porfolios")
+                                .font(.system(size: 24))
+                                .fontWeight(.bold)
+                                .lineSpacing(17)
+                                .foregroundColor(Color(red: 0.92, green: 0.36, blue: 0.25))
+                                .offset(x:20)
+                            HStack{
+                                VStack(alignment: .center){
+                                    Text("Rohini")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.semibold)
+                                        .lineSpacing(17)
+                                        .foregroundColor(.white)
+                                    ZStack{
+                                        Image("Portfo")
+                                            .resizable()
+                                            .frame(width: 270, height: 261)
+                                            .cornerRadius(20)
+                                        Image(systemName: "person.fill")
+                                            .resizable()
+                                            .frame(width: 40, height: 40)
+                                            .foregroundColor(.black)
+                                            .offset(x:-100,y:100)
+                                    }.padding(.bottom,20)
+                                    Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                        .font(.system(size: 16))
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(.white)
+                                }.foregroundColor(.clear)
+                                    .frame(width: 374, height: 429)
+                                    .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                    .cornerRadius(20)
+                                    .padding(.leading,10)
+                                VStack(alignment: .center){
+                                    Text("Rohini")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.semibold)
+                                        .lineSpacing(17)
+                                        .foregroundColor(.white)
+                                    ZStack{
+                                        Image("Portfo")
+                                            .resizable()
+                                            .frame(width: 270, height: 261)
+                                            .cornerRadius(20)
+                                        Image(systemName: "person.fill")
+                                            .resizable()
+                                            .frame(width: 40, height: 40)
+                                            .foregroundColor(.black)
+                                            .offset(x:-100,y:100)
+                                    }.padding(.bottom,20)
+                                    Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                        .font(.system(size: 16))
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(.white)
+                                }.foregroundColor(.clear)
+                                    .frame(width: 374, height: 429)
+                                    .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                    .cornerRadius(20)
+                                    .padding(.leading,10)
+                                VStack(alignment: .center){
+                                    Text("Rohini")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.semibold)
+                                        .lineSpacing(17)
+                                        .foregroundColor(.white)
+                                    ZStack{
+                                        Image("Portfo")
+                                            .resizable()
+                                            .frame(width: 270, height: 261)
+                                            .cornerRadius(20)
+                                        Image(systemName: "person.fill")
+                                            .resizable()
+                                            .frame(width: 40, height: 40)
+                                            .foregroundColor(.black)
+                                            .offset(x:-100,y:100)
+                                    }.padding(.bottom,20)
+                                    Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                        .font(.system(size: 16))
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(.white)
+                                }.foregroundColor(.clear)
+                                    .frame(width: 374, height: 429)
+                                    .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                    .cornerRadius(20)
+                                    .padding(.leading,10)
+                                VStack(alignment: .center){
+                                    Text("Rohini")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.semibold)
+                                        .lineSpacing(17)
+                                        .foregroundColor(.white)
+                                    ZStack{
+                                        Image("Portfo")
+                                            .resizable()
+                                            .frame(width: 270, height: 261)
+                                            .cornerRadius(20)
+                                        Image(systemName: "person.fill")
+                                            .resizable()
+                                            .frame(width: 40, height: 40)
+                                            .foregroundColor(.black)
+                                            .offset(x:-100,y:100)
+                                    }.padding(.bottom,20)
+                                    Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                        .font(.system(size: 16))
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(.white)
+                                }.foregroundColor(.clear)
+                                    .frame(width: 374, height: 429)
+                                    .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                    .cornerRadius(20)
+                                    .padding(.leading,10)
+                            }
+                        }
+                    }
+                    .frame(width: 393, height: 516.79)
+                    .background(Color(red: 1, green: 0.79, blue: 0.70))
+                    .offset(y:140)
                     
                     
                     
@@ -594,9 +714,7 @@ struct HomeView: View {
                     
                     
                     
-                    
-                    
-                    VStack{}.padding(.bottom,1000)
+                    VStack{}.padding(.bottom,300)
                 }
                 
                 
